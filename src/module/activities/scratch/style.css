@@ -1,0 +1,165 @@
+.swiper-container img {
+	width: 100%;
+	display: block;
+}
+/************   滚动区域开始   *************/
+.marquee-view {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	padding-left: .09rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #ffffff;
+	background-color: #00a79f;
+	font-size: 1.9em;
+
+}
+
+.marquee-col {
+	width: 33.333333%;
+	
+	float: left;
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.money-color {
+	color: #ffeb01;
+}
+/************   滚动区域结束   *************/
+
+/************   刮刮乐区域开始   *************/
+.scratch-dark, .scratch-light {
+	display: none;
+}
+
+.reletive {
+	position: relative;
+}
+
+.scratch-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+
+.scratch-text {
+	text-align: center;
+	font-size: 2.4em;
+	line-height: 150%;
+	margin-bottom: 10px;
+}
+
+#scratch-pad {
+	width: 360px;
+	height: 120px;
+}
+
+.scratch-back-text {
+	position: absolute;
+	width: 360px;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 10;
+	line-height: 120px;
+	font-size: 36px;
+	color: #FEE607;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.login-text {
+	color: #ddd;
+}
+
+.invest-text-title {
+	color: #eee;
+}
+
+.invest-text-sub {
+	color: #ddd;
+	font-size: 1.4em;
+}
+
+.scratch-complete-text {
+	font-size: 1.6em;
+	color: #fff;
+	font-weight: bold;
+}
+
+.login-img, .invest-img {
+	cursor: pointer;
+}
+
+/************   刮刮乐区域结束   *************/
+
+/************   弹窗区域开始   *************/
+
+.pop-window {
+	position: absolute;
+	display: none;
+}
+
+.black-back {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 10;
+}
+
+.pop-text-red {
+	color: red;
+}
+
+.pop-content {
+	position: fixed;
+	top: 10%;
+	z-index: 20;
+	width: 100%;
+}
+
+.pop-pocket {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.pocket-money {
+	position: absolute;
+	top: 22%;
+	width: 80%;
+	text-align: center;
+	color: red;
+	font-size: 2.8em;
+}
+
+.pop-text {
+	width: 100%;
+	margin: 0 auto;
+	color: #FEE607;
+}
+
+.pop-text p {
+	font-size: 1.4em;
+	line-height: 200%;
+	text-align: center;
+}
+
+.pop-know {
+	width: 60%;
+	margin: 20px auto;
+}
+
+/************   弹窗区域结束   *************/

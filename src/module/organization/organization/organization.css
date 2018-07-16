@@ -1,0 +1,160 @@
+
+.site-content {
+    min-height: 867px;
+}
+
+.nav-left,
+.nav-right {
+    margin-top: 10px;
+}
+
+.content-head {
+    height: 60px;
+    line-height: 60px;
+    color: #323232;
+    padding-left: 20px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+}
+
+.organization-list-wrapper {
+    padding: 0 16px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding-bottom: 17px;
+    border: 1px solid #e1e1e1;
+    border-top: 0;
+}
+
+.organization-list {
+    width: 120%;
+}
+
+.organization-list li {
+    position: relative;
+    float: left;
+    width: 295px;
+    padding-right: 8px;
+    padding-top: 17px;
+}
+
+.organization-list li > img {
+    display: block;
+    width: 100%;
+}
+
+.organization-list li .detail {
+    margin-top: 8px;
+    padding-top: 75px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+}
+
+.organization-list li .detail:hover {
+    box-shadow: -0.5px -0.5px 5px 0.5px rgba(146, 162, 178, .5), 0.5px 0.5px 5px 0.5px rgba(146, 162, 178, .5);
+}
+
+.organization-list li .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -49px;
+    top: 71px;
+    background: url("./../../../image/logo_wrap_icon.png") no-repeat center;
+    background-size: 100% auto;
+    width: 98px;
+    height: 98px;
+}
+
+.organization-list li .logo img {
+    display: inline-block;
+    width: 82px;
+    margin-top: 35px;
+    margin-left: 8px;
+    text-align: center
+}
+
+.year-rate {
+    font-size: 15px;
+    color: #969696;
+    line-height: 1.5em;
+}
+
+.year-rate-num {
+    font-size: 28px;
+    color: #f28a10;
+    line-height: 1.5em;
+}
+
+.detail-text {
+    margin: 15px 20px 35px;
+    width: 252px;
+    padding-top: 17px;
+    border-top: 1px solid #dcdcdc;
+}
+
+.detail-text > div {
+    float: left;
+}
+
+.limit-wrap {
+    width: 86px;
+}
+
+.bid-numer-wrap {
+    width: 90px;
+    border-right: 1px dashed #dcdcdc;
+    border-left: 1px dashed #dcdcdc;
+}
+
+.safe-level-wrap {
+    width: 56px;
+    padding-left: 16px;
+}
+
+.detail-sub-title {
+    font-size: 14px;
+    color: #969696;
+    padding-bottom: 15px;
+}
+
+.detail-msg {
+    color: #323232;
+    font-size: 14px;
+    height: 14px;
+}
+
+.organization-list li .has-open {
+    display: none;
+    width: 188px;
+    height: 38px;
+    margin: 0 auto 17px;
+    background-color: #c8c8c8;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 5px;
+}
+
+.organization-list li .open-button {
+    display: block;
+    width: 188px;
+    height: 38px;
+    margin: 0 auto 17px;
+    background-color: #24a9f6;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.organization-list-wrapper .content-pagination {
+    background-color: #fff;
+}
+
+.adImg {
+    height: 110px;
+    width: 100%;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">    
+    <link rel="stylesheet" href="/component/layer/skin/layer.css">
+    </head>
+    <body style="background:#fff;">
+        <form id="form" method="post" accept-charset="utf-8" style="display: none">
+           <input id="orgAccount"     type='hidden' name="orgAccount" />
+           <input id="thirdProductId" type='hidden' name="thirdProductId" />
+           <input id="orgKey"         type='hidden' name="orgKey" />
+           <input id="orgNumber"      type='hidden' name="orgNumber" />
+           <input id="sign"           type='hidden' name="sign" />
+           <input id="timestamp"      type='hidden' name="timestamp" />
+           <input id="txId"           type='hidden' name="txId" />
+           <input id="requestFrom"    type='hidden' name="requestFrom" />
+        </form>     
+        <script type="text/javascript" src='/lib/main.js'></script>
+        <script type="text/javascript">
+        seajs.use('./thirdPlatform/thirdPlatform');
+        </script>
+    </body>
+    </html>

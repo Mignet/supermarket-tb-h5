@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>T呗(投呗) - 理财投资,想投就投呗</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="T呗（投呗）是一个垂直的互联网金融理财信息导购搜索平台，您可在T呗方便的搜索、调研、推介互联网金融理财产品。T呗致力于成为您身边可信赖的理财配置师，让您想投就投呗。">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/module/home/index.css">
+    <link rel="stylesheet" href="/component/swiper/swiper.css">
+    <!--[if lt IE 9]>
+    <script src="./component/html5shiv/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!--   顶部工具栏    -->
+        <div class="site-topbar">
+            <div class="container">
+                <div class="topbar-left">
+                    <span><img src="/image/index-tel.png"></span>
+                    <span>服务热线 : </span>
+                    <span>400-888-6987</span>
+                    <span class="margin">工作日 : 9:00-12:00</span>
+                    <span>13:30-18:00</span>
+                </div>
+                <div class="topbar-right">
+                    <span>
+                        <span class="welcome-toobei">您好，欢迎您来到T呗！</span>
+                        <a target="_blank" class="login-toobei none" href="/module/user/login.html">登录</a>
+                    </span>
+                    <span class="none"><a target="_blank" href="/module/user/register.html" class="register-button">注册领红包</a></span>
+                    <span><a target="_blank" href="/module/aboutUs/companyIntroduce.html">关于我们</a></span>
+                    <span><a target="_blank" href="/module/aboutUs/helpCenter.html">帮助中心</a></span>
+                    <span><a target="_blank" href="/module/platformFile/platformFile.html">网贷平台档案</a></span>
+                    <span>
+                        <a target="_blank" class="wechat">
+                            <img src="/image/topbar_wechat.png">
+                            <span class="icon"><img src="/image/topbar_qrcode.png" alt="T呗二维码"></span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--   头部工具栏    -->
+        <div class="site-header">
+            <div class="container">
+                <div class="header-left">
+                    <a href="/index.html"><img src="/image/tb_logo.png" alt="T呗LOGO"></a>
+                    <span class="vertically"></span>
+                </div>
+                <div class="header-right">
+                    <ul>
+                        <li><a href="index.html" class="active">首页</a></li>
+                        <li><a href="/module/product/list.html">选产品</a></li>
+                        <li><a href="/module/platform/platform.html">选平台</a></li>
+                        <li><a href="/module/safe/safe.html">安全保障</a></li>
+                        <li><a href="/module/account/account.html">我的账户</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--   网页主要内容   -->
+        <div class="site-content">
+            <div class="site-banner">
+                <div id="site-bannerWrapper" class="swiper-wrapper">
+                    <script id="bannerTpl" type="text/template">
+                        <%_.each(obj,function(data){;%>
+                        <div class="swiper-slide">
+                            <a href="<%=data.linkUrl%>" target="_blank"><img src="<%=data.imgUrl%>" alt=""></a>
+                        </div>
+                        <%});%>
+                    </script>
+                </div>
+                <div class="pagination"></div>
+                <div class="login-warpper">
+                    <div class="login-content-opacity"></div>
+                    <div class="login-content">
+                        <div class="personal-header clearfix">
+                            <div class="first-child">
+                                <img src="/image/personal_header.png" alt="个人头像">
+                            </div>
+                            <div class="last-child">
+                                <p id="userName"></p>
+                                <p id="greeting"></p>
+                            </div>
+                        </div>
+                        <div class="personal-info">
+                            <p><span>累计收益：</span><span id="totalProfit"></span></p>
+                            <p><span>可用余额：</span><span id="accountBalance"></span></p>
+                            <p><a target="_blank" class="account" href="/module/account/account.html">进入账户</a></p>
+                        </div>
+                    </div>
+                    <div class="loginout-content">
+                        <div class="yearRate-info">
+                            <p class="rate">历史平均年化收益率</p>
+                            <p class="value">10.52%</p>
+                            <p class="remark">合规透明｜安全放心</p>
+                            <a target="_blank" class="button" href="/module/user/register.html">注册领红包</a>
+                            <p class="login"><span>已有账号，</span><a target="_blank" href="/module/user/login.html">立即登录</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-notice">
+                <div class="container">
+                    <div class="left">
+                        <h3 class="title">最新公告：</h3>
+                        <ul class="notice"></ul>
+                    </div>
+                    <div class="right">
+                        <a target="_blank" href="/module/aboutUs/notice.html">查看更多&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-medium">
+                <div class="container">
+                    <a target="_blank" href="module/safe/safe.html"><div class="security">
+                        <img src="/image/green_security_icon.png" alt="律盾保障计划">
+                        <p>律盾保障计划</p>
+                    </div></a>
+                    <a target="_blank" href="module/safe/safe.html#yzpt">
+                    <div class="platform">
+                        <img src="/image/hot_platform_icon.png" alt="甄选优质平台">
+                        <p>甄选优质平台</p>
+                    </div>
+                        </a>
+                    <a target="_blank" href="module/aboutUs/report.html">
+                    <div class="interviews">
+                        <img src="/image/interviews_icon.png" alt="知名媒体采访">
+                        <p>知名媒体采访</p>
+                    </div>
+                    </a>
+                    <div class="guide">
+                        <h1>新手指引</h1>
+                        <p>一分钟带你了解T呗</p>
+                        <a target="_blank" href="/module/guide/guide.html"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="site-hotplatorm">
+                <div class="container">
+                    <div class="hotplatorm-title">
+                        <div class="left">
+                            <h1>优质平台</h1></div>
+                            <div class="right"><a target="_blank" href="/module/platform/platform.html">查看更多&nbsp;>></a></div>
+                        </div>
+                        <ul class="hotplatorm-info clearfix">
+                            <script id="orgProductTpl" type="text/template">
+                                <%
+                                _.each(obj,function(data){
+                                var arr = data.deadLineValueText.split(',');
+                                if(arr.length == 2){
+                                data.deadLineText = $.trim(arr[0])+"<span>"+$.trim(arr[1])+"</span>";
+                            }else if(arr.length == 4){
+                            data.deadLineText = $.trim(arr[0])+"<span>"+$.trim(arr[1])+"</span>~"+$.trim(arr[2])+
+                            "<span>"+$.trim(arr[3])+"</span>";
+                        }
+                        %>
+                        <li class="skip-org-detail" data-href="/module/platform/platformDetail.html?orgNo=<%=data.orgNumber%>">
+                            <div class="info-title">
+                                <a class="adv-link" data-href="<%=data.orgAdvertisementUrl%>" target="_blank">
+                                    <img src="<%=config.imageUrl+data.orgAdvertisement+'?f=png'%>" alt="<%=data.orgName%>">
+                                </a>
+                            </div>
+                            <div class="info-content">
+                                <div class="platform-logo">
+                                    <img src="<%=config.imageUrl+data.pcPlatformListImg+'?f=png'%>" alt="<%=data.orgName%>">
+                                </div>
+                                <div class="platform-detail">
+                                    <div class="platform-annualyield">
+                                        <p class="yield-name">年化收益</p>
+                                        <p class="yield-value"><%=data.minProfit+'~'+data.maxProfit%><span class="unit">%</span></p>
+                                        </div>
+                                        <div class="platform-general">
+                                            <div class="product-deadline">
+                                                <p>产品期限</p>
+                                                <p class="value"><%=data.deadLineText%></p>
+                                            </div>
+                                            <div class="product-number">
+                                                <p>可投标数</p>
+                                                <p class="value"><%=data.usableProductNums%></p>
+                                            </div>
+                                            <div class="product-level">
+                                                <p>产品级别</p>
+                                                <p class="value"><%=data.grade%></p>
+                                            </div>
+                                        </div>
+                                        <div class="platform-button">
+                                            <a target="_blank">查看详情</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <%});%>
+                        </script>
+                    </ul>
+                </div>
+                <div class="container">
+                    <ul class="product-classify">
+                        <script id="productClassifyTpl" type="text/template">
+                            <%_.each(obj,function(data,index){
+                            var bgcolor= {
+                            '0' : 'bg-color0',
+                            '1' : 'bg-color1',
+                            '2' : 'bg-color2',
+                            '3' : 'bg-color0',
+                            '4' : 'bg-color1',
+                            '5' : 'bg-color2'
+                        }
+
+                        var bordercolor = {
+                        '0' : 'border-color0',
+                        '1' : 'border-color1',
+                        '2' : 'border-color2',
+                        '3' : 'border-color0',
+                        '4' : 'border-color1',
+                        '5' : 'border-color2'
+                    }
+
+                    var grade = {'1':'B','2':'BB','3':'BBB','4':'A','5':'AA','6':'AAA'};
+                    if(data.productPageListResponse){
+                    %>
+                    <li class="classify-list clearfix">
+                        <div class="left <%=bgcolor[index]%>">
+                            <p class="classify-name"><%=data.cateName%></p>
+                            <p class="classify-des"><%=data.cateDeclare%></p>
+                            <p class="classify-more">
+                                <a target="_blank" href="module/home/list.html?cateId=<%=data.cateId%>">
+                                    <img src="/image/product-morebutton.png" alt="更多按钮">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="right <%=bordercolor[index]%>">
+                            <div class="platform-content">
+                                <div class="platform-logo">
+                                    <p class="name"><img src="<%=config.imageUrl+data.productLogo+'?f=png'%>" alt=""></p>
+                                    <p class="value"><span>安全等级：<%=grade[data.grade]%></span></p>
+                                </div>
+                                <div class="platform-middle">
+                                    <div class="fieldTitle">
+                                        <p>
+                                            <a target="_blank" class="" href="module/product/detail.html?productId=<%=data.productId%>" title="<%=data.productName%>"><%=data.productName%></a>
+                                        </p>
+                                        <p><%=data.tagListText%></p>
+                                    </div>
+                                    <div class="fieldName clearfix">
+                                        <p class="productName">可购买金额</p>
+                                        <p class="yearRate">预期年化</p>
+                                        <p class="deadLineText">产品期限</p>
+                                        <p class="progressbar">
+                                            <span class="count-down">----</span>
+                                            <span class="progressNum <%=data.isHaveProgressClass%>"><%=data.salePercent%></span>
+                                            <span class="progress <%=data.isHaveProgressClass%>">
+                                                <span class="percentage <%=bgcolor[index]%>" style="width:<%=data.salePercent%>"></span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="fieldvalue clearfix">
+                                        <p class="amt">
+                                            <%=data.saleAmout%>元</p>
+                                            <p class="rate" class=""><span><%=data.yearRate%></span><span class='unit'>%</span></p>
+                                            <p class="deadLine"><%=data.deadLineText%></p>
+                                            <p class="button">
+                                                <a target="_blank" class="buyButton" href="javascript:void(0);" data-number="<%=data.orgNumber%>" data-name="<%=data.orgName%>" data-id="<%=data.productId%>" data-virtual="<%=data.orgIsstaticproduct%>" data-logo="<%=config.imageUrl+data.productLogo+'?f=png'%>">购买</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <%}else{%>
+                                    <li class="classify-list clearfix">
+                                        <div class="left <%=bgcolor[index]%>">
+                                            <p class="classify-name"><%=data.cateName%></p>
+                                            <p class="classify-des"><%=data.cateDeclare%></p>
+                                            <p class="classify-more">
+                                                <a target="_blank" href="module/home/list.html?cateId=<%=data.cateId%>">
+                                                    <img src="/image/product-morebutton.png" alt="更多按钮">
+                                                </a>
+                                            </p>
+                                        </div>
+                                        <div class="right <%=bordercolor[index]%>">
+                                            <div class="sold-out-wrapper">
+                                                <div class="sold-out <%=data.soldOutClass%>">
+                                                    <div class="sold-out-text">
+                                                        <div class="text-title">
+                                                            <p class="year-rate-title">年化收益</p>
+                                                            <p class="limit-title">产品期限</p>
+                                                        </div>
+                                                        <div class="text-con">
+                                                            <p class="year-rate"><%=data.yearRate%><span>%</span></p>
+                                                            <p class="limit"><%=data.deadLineText%></p>
+                                                        </div>
+                                                        <div class="sold-out-icon">
+                                                            <img src="image/sold_out_icon.png" alt="售罄">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="no-planner-recommend <%=data.isPlannerClass%>">您的理财师暂时未推荐产品...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <%}});%>
+                                    </script>
+                                </ul>
+                            </div>
+                            <div class="site-news">
+                                <div class="container">
+                                    <div class="news-title">
+                                        <h1>网贷新闻</h1></div>
+                                        <div class="news-content clearfix">
+                                            <div class="left">
+                                                <div class="news-tab">
+                                                    <ul class="clearfix">
+                                                        <li><a target="_blank" data-id="4" class="active">行业动态</a></li>
+                                                        <li><a target="_blank" data-id="2">政策法规</a></li>
+                                                        <li><a target="_blank" data-id="3">权威观点</a></li>
+                                                        <li><a target="_blank" data-id="1">投资攻略</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="news-list">
+                                                    <ul id="netloanNewsBox">
+                                                        <script id="netloanNewsTpl" type="text/template">
+                                                            <%_.each(obj,function(data){%>
+                                                            <li>
+                                                                <div class="content clearfix">
+                                                                    <div><img src="<%=data.thumbnail%>" alt="<%=data.title%>"></div>
+                                                                    <div class="news-head">
+                                                                        <h1 class="ellipsis">
+                                                                            <a target="_blank" href="<%=data.detailUrl%>" target="_blank"><%=data.title%></a>
+                                                                        </h1>
+                                                                        <p class="ellipsis"><%=data.summary%></p>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <%})%>
+                                                    </script>
+                                                </ul>
+                                            </div>
+                                            <div class="news-more">
+                                                <a target="_blank" id="newsMore">查看更多<span>》</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="tb-noticeOrMove">
+                                                <div class="tb-noticeOrMove-title clearfix">
+                                                    <h1>
+                                                        <img src="/image/tb_notice_icon.png" alt="T呗公告">
+                                                        <span>T呗公告</span>
+                                                    </h1>
+                                                    <h3><a target="_blank" id="notice-more" target="_blank" href="/module/aboutUs/notice.html">更多<span>》</span></a></h3>
+                                                </div>
+                                                <div class="tb-noticeOrMove-list">
+                                                    <ul id="tb-notice-box">
+                                                        <script id="tbNoticeTpl" type="text/template">
+                                                            <%_.each(obj,function(data){%>
+                                                            <li>
+                                                                <a target="_blank" class="ellipsis" target="_blank" href="/module/aboutUs/noticeDetail.html?msgId=<%=data.id%>"><%=data.message%></a>
+                                                                <span><%=new Date(data.crtTime.split(' ')[0]).format('MM-dd')%></span>
+                                                            </li>
+                                                            <%})%>
+                                                    </script>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tb-noticeOrMove tb-move">
+                                            <div class="tb-noticeOrMove-title clearfix">
+                                                <h1>
+                                                    <img src="/image/tb_move_icon.png" alt="T呗动态">
+                                                    <span>T呗动态</span>
+                                                </h1>
+                                                <h3><a target="_blank" href="/module/aboutUs/dynamic.html" id="move-more" target="_blank">更多<span>》</span></a></h3>
+                                            </div>
+                                            <div class="tb-noticeOrMove-list">
+                                                <ul id="tb-move-box">
+                                                    <script id="tbMoveTpl" type="text/template">
+                                                        <%_.each(obj,function(data){%>
+                                                        <li>
+                                                            <a target="_blank" class="ellipsis" href="/module/aboutUs/dynamicDetail.html?msgId=<%=data.id%>" target="_blank"><%=data.title%></a>
+                                                            <span><%=new Date(data.crtTime.split(' ')[0]).format('MM-dd')%></span>
+                                                        </li>
+                                                        <%})%>
+                                                </script>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cooperation-org">
+                        <div class="container">
+                            <div class="title">
+                                <h1>最新入驻平台</h1>
+                            </div>
+                            <div class="cooperation-banner">
+                                <div class="cooperation-bannerwrap">
+                                    <div id="cooperationBanner" class="swiper-wrapper">
+                                        <script id="orgBannerTpl" type="text/template">
+                                            <%_.each(obj,function(data){;%>
+                                            <div class="swiper-slide">
+                                                <a target="_blank" href="/module/platform/platformDetail.html?orgNo=<%=data.orgNumber%>">
+                                                    <img src="<%=config.imageUrl+ data.orgLogo+'?f=png'%>" alt="<%=data.orgName%>">
+                                                </a>
+                                            </div>
+                                            <%});%>
+                                        </script>
+                                    </div>
+                                </div>
+                                <div><a target="_blank" class="arrow-left"></a></div>
+                                <div><a target="_blank" class="arrow-right"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   网页右侧固定栏   -->
+            <div class="site-fixedbar">
+                <div>
+                    <a target="_blank" href="https://www.toobei.com/module/activities/newRegister.html" target="_blank">
+                        <img src="/image/new_packt_icon.png" alt="新手红包">
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a target="_blank" class="telphone">
+                            <i></i><br>
+                            <span>电话</span>
+                            <div class="telphoneNum">400-888-6987</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="customerservice">
+                            <i></i><br>
+                            <span>客服</span>
+                            <div class="line-customer" onclick='easemobim.bind({tenantId: "13522"})'>在线客服</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="wechat">
+                            <i></i><br>
+                            <span>微信</span>
+                            <div class="QRCode">
+                                <img src="/image/footer_qrcode_icon.png" alt="T呗二维码">
+                                <p>微信描一描</p>
+                                <p>关注微信公众号</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" id="backtop" class="backtop" onclick="backTop()">
+                            <i></i><br>
+                            <span>顶部</span>
+                            <div id="fiexbar-backtop" class="back" onclick="backTop()">返回顶部</div>
+                            <script type="text/javascript">
+                                function backTop() {$("body,html").animate({scrollTop: 0}, "normal");}
+                            </script>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <!--   网页底部   -->
+        <div class="site-footer">
+            <div class="footer-adbar">
+                <div class="container">
+                    <ul class="clearfix">
+                        <li class="first-child">
+                            <img src="/image/footer_select_reason.png" alt="选择T呗的理由">
+                        </li>
+                        <li class="two-child">
+                            <img src="/image/footer_reason_01.png" alt="律盾保障计划">
+                            <h3>律盾保障计划</h3>
+                            <span>提供维权基金、平台风险保障金、顶尖的律师团队</span>
+                        </li>
+                        <li class="three-child">
+                            <img src="/image/footer_reason_02.png" alt="甄选优质平台">
+                            <h3>甄选优质平台</h3>
+                            <span>权威的实地认证考察、调研、资质审核</span>
+                        </li>
+                        <li class="four-child">
+                            <img src="/image/footer_reason_03.png" alt="专业的安全评级">
+                            <h3>专业的安全评级</h3>
+                            <span>综合平台线上、线下运营管理水平</span>
+                        </li>
+                        <li class="last-child">
+                            <img src="/image/footer_reason_04.png" alt="大数据实时监测">
+                            <h3>大数据实时监测</h3>
+                            <span>数据监测、动态、舆情等大数据反馈</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-linkbar">
+                <div class="container">
+                    <div class="linkbar-top">
+                        <div class="linkbar-nav">
+                            <div class="clearfix">
+                                <p><a target="_blank" href="/module/aboutUs/companyIntroduce.html">公司简介</a></p>
+                                <p><a target="_blank" href="/module/aboutUs/notice.html">T呗公告</a></p>
+                                <p class="none"><a target="_blank" href="/module/aboutUs/joint.html">商务合作</a></p>
+                                <p><a target="_blank" href="/module/aboutUs/dynamic.html">T呗动态</a></p>
+                            </div>
+                            <div class="clearfix">
+                                <p><a target="_blank" href="/module/aboutUs/team.html">团队介绍</a></p>
+                                <p><a target="_blank" href="/module/aboutUs/helpCenter.html">帮助中心</a></p>
+                            </div>
+                            <div class="clearfix">
+                                <p><a target="_blank" href="/module/protocol/protocol.html">注册协议</a></p>
+                                <p><a target="_blank" href="/module/safe/safe.html">安全保障</a></p>
+                                <p class="hidden"><a target="_blank" href="">行业动态</a></p>
+                            </div>
+                            <div class="clearfix">
+                                <p><a target="_blank" href="/module/aboutUs/contact.html">联系我们</a></p>
+                                <p><a target="_blank" href="/module/aboutUs/report.html">媒体报道</a></p>
+                                <p class="hidden"><a target="_blank" href="">投资攻略</a></p>
+                            </div>
+                        </div>
+                        <div class="linkbar-qrcode">
+                            <div><img src="/image/footer_qrcode_icon.png" alt="T呗二维码"></div>
+                            <div class="wechat">T呗官方公众号</div>
+                        </div>
+                        <div class="linkbar-link">
+                            <img src="/image/footer_tel_icon.png" alt="T呗官方联系电话">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottombar">
+                <div class="container">
+                    <div class="companyhonest">
+                        <a target="_blank" href="http://www.bcpcn.com/product/rz/bq/BCP1894497542.html" target="_blank">
+                            <img src="/image/site_identity_red2.png" alt="T呗已通过中网权威数据库对比，获得“诚信企业”身份验证">
+                        </a>
+                        <a style="display: none;" target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e16091944030064723ip1l000000&amp;ct=df&amp;a=1&amp;pa=0.47373637918780176" target="_blank">
+                            <img src="/image/site_identity_red.png" alt="T呗已通过中网权威数据库对比，获得“可信网站”身份验证">
+                        </a>
+                    </div>
+                    <div class="companyrecord">
+                        <span>Copyright©2016 &nbsp;&nbsp; 深圳市前海领会科技有限公司</span>
+                        <a target="_blank" href="http://www.miitbeian.gov.cn" target="_blank">&nbsp; 粤ICP备16032193号-2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script type="text/javascript" src='/lib/main.js'></script>
+    <script src='https://kefu.easemob.com/webim/easemob.js' async='async'></script>
+    <script type="text/javascript">
+        seajs.use("/module/home/index");
+    </script>
+</body>
+</html>

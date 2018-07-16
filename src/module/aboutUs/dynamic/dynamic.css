@@ -1,0 +1,94 @@
+.right-content h2 {
+    height: 49px;
+    border-bottom: 1px solid #dcdcdc;
+    line-height: 49px;
+    font-size: 18px;
+    color: #323232;
+    padding-left: 11px;
+}
+
+.dynamic-list li {
+    padding: 22px 12px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.dynamic-list .no-data-tpl {
+    border-bottom: 0;
+}
+
+.dynamic-list h3 {
+    line-height: 18px;
+    padding-bottom: 11px;
+}
+
+.dynamic-list h3 span {
+    float: left;
+    font-size: 14px;
+    color: #646464;
+}
+
+.dynamic-list h3 i {
+    float: right;
+    color: #969696;
+}
+
+.dynamic-list li p {
+    line-height: 24px;
+}
+
+.dynamic-list li p span {
+    color: #969696;
+}
+
+.dynamic-list li p a {
+    color: #0f99e9;
+}
+
+li.last {
+    border-bottom: 0;
+}
+
+.dynamic-list li > div {
+    float: left;
+}
+
+.dynamic-list .logo {
+    padding: 16px 12px 14px 0;
+    width: 239px;
+}
+
+.logo img {
+    width: 239px;
+    height: 120px;
+}
+
+.dynamic-list .content {
+    width: 595px;
+    padding-left: 18px;
+}
+
+.content h3 {
+    padding-top: 24px;
+    padding-bottom: 10px;
+}
+
+.content h3 p {
+    float: left;
+    font-size: 18px;
+    color: #646464;
+}
+
+.content h3 span {
+    float: right;
+    color: #969696;
+    line-height: 18px;
+}
+
+.content p {
+    line-height: 25px;
+    color: #969696;
+}
+
+.content p a {
+    color: #0f99e9;
+}

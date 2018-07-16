@@ -1,0 +1,97 @@
+/*!
+ laypage默认样式
+*/
+
+.laypage_main{font-size:0; clear:both; color:#666;}
+.laypage_main *{display:inline-block; vertical-align: top; font-size:14px;}
+.laypage_main a{height:26px; line-height:26px; text-decoration:none; color:#666;}
+.laypage_main a, .laypage_main span{margin:0 3px 6px; padding:0 10px;}
+.laypage_main span{height:26px; line-height:26px;}
+.laypage_main input{ border:1px solid #ccc; background-color:#fff;}
+.laypage_main button{
+	border:1px solid #12a2f5; background-color:#12a2f5;
+}
+.laypage_main input{width:40px; height:26px; line-height:26px; margin:0 5px; padding:0 5px;}
+.laypage_main button{width:60px;margin-left:5px; padding:0 10px; color:#666;}
+
+/* 默认皮肤 */
+.laypageskin_default a{border:1px solid #ccc; background-color:#fff;}
+.laypageskin_default span{height:28px; line-height:28px; color:#999; }
+.laypageskin_default .laypage_curr{font-weight:700; color:#666;}
+
+/* 墨绿 */
+.laypageskin_molv a, .laypageskin_molv span{padding:0 12px; border-radius:2px;}
+.laypageskin_molv a{ background-color:#f1eff0; }
+.laypageskin_molv .laypage_curr{background-color:#00AA91; color:#fff;}
+.laypageskin_molv input{height:24px; line-height:24px;}
+.laypageskin_molv button{height:26px; line-height:26px;}
+
+/* 雅黑 */
+.laypageskin_yahei{color:#333}
+.laypageskin_yahei a, .laypageskin_yahei span{padding:0 13px; border-radius:2px; color:#333}
+.laypageskin_yahei .laypage_curr{background-color:#333; color:#fff;}
+
+/*金融超市*/
+.content-pagination{
+	width: 100%;
+	background-color:#edf0f3; 
+	overflow: hidden;
+}
+.laypageskin_toobei{
+	color:#687a99;
+	float: right;
+	height: 32px;
+	margin-bottom:30px;
+}
+
+.laypageskin_toobei * {
+	vertical-align:middle!important;
+	height:30px!important;
+	line-height:30px!important;
+}
+
+.laypage_total input{
+	height:28px!important;
+}
+
+.laypageskin_toobei a, .laypageskin_toobei span{
+	padding:0px 15px; 
+	border-radius:5px; 
+	color:#969696;
+	border: 1px solid #969696;
+	margin:0;
+	margin-right:5px;
+}
+.laypageskin_toobei .laypage_curr{background-color:#95a2bf; color:#fff;}
+.laypageskin_toobei .laypage_total{
+	border: none!important;
+	height: inherit;
+	line-height: inherit;
+	color:#646464;
+	margin-right: 0;
+	padding:0;
+}
+
+.laypageskin_toobei .laypage_total input  {
+	width:26px;
+	border-radius:5px;
+	vertical-align: middle;
+	outline: none;
+	margin-top: -2px;
+}
+
+.laypageskin_toobei .laypage_total button {
+	width:92px;
+	border-radius:5px;
+	vertical-align: middle;
+	outline: none;
+	background-color:#12a2f5;
+	color: #fff; 
+	line-height:28px!important; 
+	margin-top: -2px;
+	cursor: pointer;
+}
+
+/* 一般用于信息流加载 */
+.laypageskin_flow{text-align:center;}
+.laypageskin_flow .page_nomore{color:#999}

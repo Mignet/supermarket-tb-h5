@@ -1,0 +1,53 @@
+.report-list li {
+    padding: 0 12px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.report-list li.last {
+    border-bottom: 0;
+}
+
+.report-list li > div {
+    float: left;
+}
+
+.report-list .logo {
+    padding: 35px 0 34px 12px;
+    width: 239px;
+}
+
+.logo img {
+    width: 239px;
+    height: 80px;
+}
+
+.report-list .content {
+    width: 583px;
+    padding-left: 30px;
+}
+
+.content h3 {
+    padding-top: 24px;
+    padding-bottom: 10px;
+}
+
+.content h3 p {
+    float: left;
+    font-size: 18px;
+    color: #646464;
+}
+
+.content h3 span {
+    float: right;
+    color: #969696;
+    line-height: 18px;
+}
+
+.content p {
+    line-height: 25px;
+    color: #969696;
+}
+
+.content p a {
+    color: #0f99e9;
+}

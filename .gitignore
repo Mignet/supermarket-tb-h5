@@ -1,0 +1,7 @@
+dist
+lib
+node_modules
+src/lib/main.js
+.idea
+.project
+ npm-debug.log

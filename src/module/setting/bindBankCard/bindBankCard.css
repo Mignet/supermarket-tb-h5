@@ -1,0 +1,65 @@
+.form ul {
+    padding-top: 22px;
+}
+
+.row {
+    margin-top: 12px;
+}
+
+.row label {
+    float: left;
+    width: 40%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.row input {
+    float: left;
+    width: 95%;
+    padding-left: 5%;
+    height: 28px;
+}
+.inputWrapper{
+    float: left;
+    width: 38%;
+    height: 30px;
+    border:1px solid #dcdcdc;
+}
+.row select {
+    float: left;
+    padding-left: 10px;
+    width: 100%;
+    height: 30px;
+    border:0;
+    color: #c8c8c8;
+    outline: none;
+}
+
+.button {
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-color: #12a2f5;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 40%;
+    margin-top: 14px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.errorBox {
+    margin-left: 40%;
+    margin-top: 12px;
+    color: #fb5757;
+    padding-left: 18px;
+    background: url('../../../image/error-logo.png') no-repeat left center;
+    background-size: auto 100%;
+}
+
+.row .color {
+    color: #323232;
+}

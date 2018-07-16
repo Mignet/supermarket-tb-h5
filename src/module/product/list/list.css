@@ -1,0 +1,119 @@
+.site-content{
+  min-height: 0;
+}
+.minHeight{
+  min-height: 1000px!important;
+}
+.site-filterWrapper{
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.site-filter{
+  padding:0 12px;
+}
+.site-filter .filter-list-box{
+  height: 46px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.site-filter>div.last{
+  border:0;
+}
+.site-filter ul.filter-list{
+  height: 100%;
+  float: left;
+  max-width: 930px;
+}
+.filter-list li{
+  float: left;
+}
+.filter-title{
+  float: left;
+  width: 73px;
+  line-height: 22px;
+  margin: 12px 0;
+  color: #646464;
+}
+
+.filter-all{
+  float: left;
+  width: 120px;
+  line-height: 22px;
+  margin: 12px 0;
+  color: #646464;
+  text-align:center;
+}
+
+.filter-all a{
+  line-height: 22px;
+  padding:0 7px;
+  margin: 12px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  max-width: 87%;
+  cursor: pointer;
+}
+
+.filter-all a:hover{
+  background: #c8c8c8;
+  color: #fff;
+}
+
+.filter-all a.active{
+  background-color:#24a9f6; 
+  color: #fff;
+}
+
+
+.filter-list li{
+  width: 120px;
+}
+.filter-list li.filter-first{
+  width: 73px;
+}
+.filter-list li a{
+  float:left;
+  line-height: 22px;
+  padding:0 7px;
+  margin: 12px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  max-width: 87%;
+  cursor: pointer;
+}
+.filter-list li a:hover{
+  background: #c8c8c8;
+  color: #fff;
+}
+.filter-list li a.active{
+  background-color:#24a9f6; 
+  color: #fff;
+}
+.no-data-tpl{
+ border-bottom: 0!important;
+}
+/*收起展开 start*/
+.launchPack{
+  float: right;
+  width: 48px;
+  height: 18px;
+  margin-top: 18px;
+  text-align: left;
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #646464;
+  background: url(../../../image/arrow-down.png) 96% center no-repeat;
+  border:1px solid #dcdcdc;
+  text-indent: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+.launch{
+  background-image: url(../../../image/arrow-down.png);
+}
+.pack{
+  background-image: url(../../../image/arrow-up.png);
+}
+/*收起展开 end*/

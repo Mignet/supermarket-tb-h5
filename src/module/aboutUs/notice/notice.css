@@ -1,0 +1,49 @@
+.right-content h2 {
+    height: 49px;
+    border-bottom: 1px solid #dcdcdc;
+    line-height: 49px;
+    font-size: 18px;
+    color: #323232;
+    padding-left: 11px;
+}
+
+.notice-list li {
+    padding: 22px 12px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.notice-list .no-data-tpl {
+    border-bottom: 0;
+}
+
+.notice-list h3 {
+    line-height: 18px;
+    padding-bottom: 11px;
+}
+
+.notice-list h3 span {
+    float: left;
+    font-size: 18px;
+    color: #646464;
+}
+
+.notice-list h3 i {
+    float: right;
+    color: #969696;
+}
+
+.notice-list li p {
+    line-height: 24px;
+}
+
+.notice-list li p span {
+    color: #969696;
+}
+
+.notice-list li p a {
+    color: #0f99e9;
+}
+
+li.last {
+    border-bottom: 0;
+}

@@ -1,0 +1,145 @@
+.site-content {
+    min-height: 526px !important;
+}
+
+.no-data-tpl {
+    height: 400px !important;
+}
+
+.site-main .left-nav {
+    float: left;
+    width: 300px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.left-nav ul {
+    border: 1px solid #dcdcdc;
+    border-bottom: 0;
+}
+
+.left-nav li {
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.left-nav li.title {
+    background-color: #fff;
+    padding-left: 3.69%;
+}
+
+.left-nav li {
+    font-size: 18px;
+    color: #323232;
+}
+
+.left-nav li a {
+    display: block;
+    height: 100%;
+    padding-left: 44px;
+    font-size: 16px;
+    color: #646464;
+    background-repeat: no-repeat;
+    background-position: 11px center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.left-nav li a.active {
+    color: #fff;
+    background-color: #24a9f6;
+}
+
+.company-intro a {
+    background-image: url("./about_companyIntro.png");
+}
+
+.company-intro a.active {
+    background-image: url("./about_companyIntro_active.png");
+}
+
+.report a {
+    background-image: url("./about_report.png");
+}
+
+.report a.active {
+    background-image: url("./about_report_active.png")
+}
+
+.team-intro a {
+    background-image: url("./about_teamIntro.png")
+}
+
+.team-intro a.active {
+    background-image: url("./about_teamIntro_active.png")
+}
+
+.help a {
+    background-image: url("./about_help.png")
+}
+
+.help a.active {
+    background-image: url("./about_help_active.png")
+}
+/*
+.joint a {
+    background-image: url("./about_joint.png")
+}
+
+.joint a.active {
+    background-image: url("./about_joint_active.png")
+}*/
+
+.agreement a {
+    background-image: url("./about_agreement.png")
+}
+
+.agreement a.active {
+    background-image: url("./about_agreement_active.png")
+}
+
+.notice a {
+    background-image: url("./about_notice.png")
+}
+
+.notice a.active {
+    background-image: url("./about_notice_active.png")
+}
+
+.dynamic a {
+    background-image: url("./about_dynamic.png")
+}
+
+.dynamic a.active {
+    background-image: url("./about_dynamic_active.png")
+}
+
+.contact a {
+    background-image: url("./about_contact.png")
+}
+
+.contact a.active {
+    background-image: url("./about_contact_active.png")
+}
+
+.site-main .right-content {
+    float: left;
+    width: 890px;
+}
+
+.site-main .right-content .wrapper {
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 30px;
+    min-height: 450px;
+}
+
+.right-content h2 {
+    height: 49px;
+    line-height: 49px;
+    font-size: 18px;
+    padding-left: 11px;
+    background-color: #fff;
+    border-bottom: 1px solid #dcdcdc;
+}

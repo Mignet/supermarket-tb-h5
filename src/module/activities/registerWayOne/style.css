@@ -1,0 +1,179 @@
+
+.activities-top{
+    min-width: 1200px;
+    background: url(bg_top.jpg) no-repeat;
+    background-size: 100% 100%;
+    height:664px;
+}
+
+.activities-middle{
+    position: relative;
+    min-width: 1200px;
+    background: url(bg_middle.jpg) no-repeat;
+    background-size: 100% 100%;
+    height:1514px;
+}
+
+.activities-bottom{
+    position: relative;
+    min-width: 1200px;
+    background: url(bg_bottom.jpg) no-repeat;
+    background-size: 100% 100%;
+    height:873px;
+}
+
+.content{
+    width:1200px;
+    margin: 0 auto;
+    height:100%;
+}
+
+.activities-top .topIcon{
+    margin-top: 50px;
+    float: left;
+} 
+
+.activities-top .formBox{
+    float: right;
+} 
+
+.activities-bottom .content img{
+  margin-top: 170px;
+}
+
+.formBox{
+    margin-top:50px;
+    width:390px;
+    min-height:458px;
+    max-height:500px;
+    background-color: #fff7e8;
+    border-radius: 6px;
+}
+
+.formBox form{
+    margin:0 36px;
+}
+
+.formBox h2{
+    height:58px;
+    line-height: 58px;
+    background-color: #fb9614;
+    font-size: 20px;
+    color:#fff;
+    text-align: center;
+    border-top-right-radius:  6px;
+    border-top-left-radius:  6px;
+}
+
+.formBox p{
+    height:44px;
+    line-height: 44px;
+    width:100%;
+    margin:10px 0;
+}
+
+.formBox p.remark{
+  font-size: 15px;
+  text-align: center;
+  color:#646464;
+}
+
+.formBox p.remark a{
+    color:#12a2f5;
+}
+
+.formBox li{
+    position: relative;
+    height:44px;
+    line-height: 44px;
+    width:100%;
+    margin:10px 0;
+    border:1px solid #dcdcdc;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.formBox li label{
+    float: left;
+    width:44px;
+    height:100%;
+    background: url(/image/plat_icon_1.png) left top no-repeat;
+    border-right:1px solid #dcdcdc;
+}
+
+.formBox li input{
+    float: left;
+    height:44px;
+    line-height: 44px;
+    width:260px;
+    border:none;
+    outline: none;
+    padding-left:10px;
+    font-size: 15px;
+}
+
+#verImg{
+    position: absolute;
+    right:40px;
+    top:8px;
+    width:70px;
+    height:30px;
+}
+
+#refreshVeri {
+    position: absolute;
+    right:5px;
+    top:8px;
+    width:30px;
+    height:30px;    
+    background: url(/image/plat_icon_1.png) 5px -314px no-repeat;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.smsCodeButton{
+    position: absolute;
+    right:0;
+    width:120px;
+    height:24px;
+    margin:10px 0;
+    outline: none;
+    border-left:1px solid #dcdcdc;
+    font-size: 15px;
+}
+
+.submitButton{
+    height:46px;
+    line-height: 46px;
+    background-color: #fb9614;
+    border-radius: 6px;
+    text-align: center;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.userProtocol{
+    color:#969696;
+    font-size: 12px;
+}
+
+.userProtocol a{
+    color:#12a2f5;
+    cursor:pointer;
+}
+
+.errorBox{
+    margin:15px 0;
+}
+
+.error{
+    font-size: 15px;
+}
+
+.errorImg{
+  width:20px;
+  height:20px;
+}
+
+

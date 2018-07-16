@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>T呗动态详情-T呗（投呗） </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./common/common.css">
+    <link rel="stylesheet" href="./noticeDetail/noticeDetail.css">
+    <!--[if lt IE 9]>
+    <script src="./component/html5shiv/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--   顶部工具栏    -->
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-left">
+            <span><img src="/image/index-tel.png"></span>
+            <span>服务热线 : </span>
+            <span>400-888-6987</span>
+            <span class="margin">工作日 : 9:00-12:00</span>
+            <span>13:30-18:00</span>
+        </div>
+        <div class="topbar-right">
+            <span>
+                <span class="welcome-toobei">您好，欢迎您来到T呗！</span>
+                <a class="login-toobei none" href="/module/user/login.html">登录</a>
+            </span>
+                <span class="none"><a href="/module/user/register.html" class="register-button">注册领红包</a></span>
+                <span><a href="/module/aboutUs/companyIntroduce.html">关于我们</a></span>
+                <span><a href="/module/aboutUs/helpCenter.html">帮助中心</a></span>
+                <span><a href="/module/platformFile/platformFile.html">网贷平台档案</a></span>
+            <span>
+                <a class="wechat">
+                    <img src="/image/topbar_wechat.png">
+                    <span class="icon"><img src="/image/topbar_qrcode.png" alt="T呗二维码"></span>
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!--   头部工具栏    -->
+<div class="site-header">
+    <div class="container">
+        <div class="header-left">
+            <a href="/index.html"><img src="/image/tb_logo.png" alt="T呗LOGO"></a>
+            <span class="vertically"></span>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li><a href="/index.html">首页</a></li>
+                <li><a href="/module/product/list.html">选产品</a></li>
+                <li><a href="/module/platform/platform.html">选平台</a></li>
+                <li><a href="/module/safe/safe.html">安全保障</a></li>
+                <li><a href="/module/account/account.html">我的账户</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="site-content">
+    <div class="container">
+        <!-- 导航 -->
+        <div class="main-nav clearfix">
+            <span>当前位置：<a href="../../index.html">首页</a>&nbsp;&gt;</span><span>&nbsp;<a href="./companyIntroduce.html">关于我们&nbsp;&gt;</a></span><span
+                class="nav-classify">&nbsp;T呗动态</span>
+        </div>
+        <div class="site-main clearfix">
+            <div class="left-nav">
+                <ul>
+                    <li class="title">关于我们</li>
+                    <li class="company-intro"><a href="./companyIntroduce.html">公司介绍</a></li>
+                    <li class="report"><a href="./report.html">媒体报道</a></li>
+                    <li class="team-intro"><a href="./team.html">团队介绍</a></li>
+                    <li class="help"><a href="./helpCenter.html">帮助中心</a></li>
+                    <li class="agreement"><a href="./agreement.html">服务协议</a></li>
+                    <li class="notice"><a href="./notice.html">T呗公告</a></li>
+                    <li class="dynamic"><a class="active" href="./dynamic.html">T呗动态</a></li>
+                    <li class="contact"><a href="./contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <div class="wrapper">
+                    <div id="detailTpl" class="notice-detail">
+                        <script id="detail" type="text/template">
+                            <h1><%=title%></h1>
+                            <p class="releaseTime">发布时间：<%=validBegin%></p>
+                            <div><%=content%></div>
+                        </script>
+                    </div>
+                    <div class="pager-nav clearfix">
+                        <p class="before">上一篇：<a id="beforeOne"></a></p>
+                        <p class="next">下一篇：<a id="nextOne"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--   网页右侧固定栏   -->
+<div class="site-fixedbar">
+    <div>
+        <a href="https://www.toobei.com/module/activities/newRegister.html" target="_blank">
+            <img src="/image/new_packt_icon.png" alt="新手红包">
+        </a>
+    </div>
+    <ul>
+        <li>
+            <a class="telphone">
+                <i></i><br>
+                <span>电话</span>
+                <div class="telphoneNum">400-888-6987</div>
+            </a>
+        </li>
+        <li>
+            <a class="customerservice">
+                <i></i><br>
+                <span>客服</span>
+                <div class="line-customer" onclick='easemobim.bind({tenantId: "13522"})'>
+                    在线客服
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="wechat">
+                <i></i><br>
+                <span>微信</span>
+                <div class="QRCode">
+                    <img src="/image/footer_qrcode_icon.png" alt="T呗二维码">
+                    <p>微信描一描</p>
+                    <p>关注微信公众号</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a class="backtop" onclick="backTop()">
+                <i></i><br>
+                <span>顶部</span>
+                <div id="fiexbar-backtop" class="back" onclick="backTop()">返回顶部</div>
+                <script type="text/javascript">
+                    function backTop() {$("body,html").animate({scrollTop: 0}, "normal");}
+                </script>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!--   网页底部   -->
+<div class="site-footer">
+    <div class="footer-adbar">
+        <div class="container">
+            <ul class="clearfix">
+                <li class="first-child">
+                    <img src="/image/footer_select_reason.png" alt="选择T呗的理由">
+                </li>
+                <li class="two-child">
+                    <img src="/image/footer_reason_01.png" alt="律盾保障计划">
+                    <h3>律盾保障计划</h3>
+                    <span>提供维权基金、平台风险保障金、顶尖的律师团队</span>
+                </li>
+                <li class="three-child">
+                    <img src="/image/footer_reason_02.png" alt="甄选优质平台">
+                    <h3>甄选优质平台</h3>
+                    <span>权威的实地认证考察、调研、资质审核</span>
+                </li>
+                <li class="four-child">
+                    <img src="/image/footer_reason_03.png" alt="专业的安全评级">
+                    <h3>专业的安全评级</h3>
+                    <span>综合平台线上、线下运营管理水平</span>
+                </li>
+                <li class="last-child">
+                    <img src="/image/footer_reason_04.png" alt="大数据实时监测">
+                    <h3>大数据实时监测</h3>
+                    <span>数据监测、动态、舆情等大数据反馈</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-linkbar">
+        <div class="container">
+            <div class="linkbar-top">
+                <div class="linkbar-nav">
+                    <div class="clearfix">
+                        <p><a href="/module/aboutUs/companyIntroduce.html">公司简介</a></p>
+                        <p><a href="/module/aboutUs/notice.html">T呗公告</a></p>
+                        <p class="none"><a href="/module/aboutUs/joint.html">商务合作</a></p>
+                        <p><a href="/module/aboutUs/dynamic.html">T呗动态</a></p>
+                    </div>
+                    <div class="clearfix">
+                        <p><a href="/module/aboutUs/team.html">团队介绍</a></p>
+                        <p><a href="/module/aboutUs/helpCenter.html">帮助中心</a></p>
+                    </div>
+                    <div class="clearfix">
+                        <p><a href="/module/protocol/protocol.html">注册协议</a></p>
+                        <p><a href="/module/safe/safe.html">安全保障</a></p>
+                        <p class="hidden"><a href="">行业动态</a></p>
+                    </div>
+                    <div class="clearfix">
+                        <p><a href="/module/aboutUs/contact.html">联系我们</a></p>
+                        <p><a href="/module/aboutUs/report.html">媒体报道</a></p>
+                        <p class="hidden"><a href="">投资攻略</a></p>
+                    </div>
+                </div>
+                <div class="linkbar-qrcode">
+                    <div><img src="/image/footer_qrcode_icon.png" alt="T呗二维码"></div>
+                    <div class="wechat">T呗官方公众号</div>
+                </div>
+                <div class="linkbar-link">
+                    <img src="/image/footer_tel_icon.png" alt="T呗官方联系电话">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottombar">
+        <div class="container">
+            <div class="companyhonest">
+                <a href="http://www.bcpcn.com/product/rz/bq/BCP1894497542.html" target="_blank">
+                    <img src="/image/site_identity_red2.png" alt="T呗已通过中网权威数据库对比，获得“诚信企业”身份验证">
+                </a>
+                <a style="display: none;" href="https://ss.knet.cn/verifyseal.dll?sn=e16091944030064723ip1l000000&amp;ct=df&amp;a=1&amp;pa=0.47373637918780176" target="_blank">
+                    <img src="/image/site_identity_red.png" alt="T呗已通过中网权威数据库对比，获得“可信网站”身份验证">
+                </a>
+            </div>
+            <div class="companyrecord">
+                <span>Copyright©2016 &nbsp;&nbsp; 深圳市前海领会科技有限公司</span>
+                <a href="http://www.miitbeian.gov.cn" target="_blank">&nbsp; 粤ICP备16032193号-2</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src='/lib/main.js'></script>
+<script src='https://kefu.easemob.com/webim/easemob.js' async='async'></script>
+<script type="text/javascript">
+    seajs.use('./dynamicDetail/dynamicDetail');
+</script>
+</body>
+</html>

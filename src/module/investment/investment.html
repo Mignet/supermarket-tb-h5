@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>我的投资-T呗（投呗）</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" type="text/css" href="./investment/investment.css"/>
+        <!--[if lt IE 9]>
+        <script src="./component/html5shiv/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+	    <!--   顶部工具栏    -->
+	    <div class="site-topbar">
+	    <div class="container">
+	    <div class="topbar-left">
+	    <span><img src="/image/index-tel.png"></span>
+	    <span>服务热线 : </span>
+	    <span>400-888-6987</span>
+	    <span class="margin">工作日 : 9:00-12:00</span>
+	    <span>13:30-18:00</span>
+	    </div>
+	    <div class="topbar-right">
+	    <span>
+	    <span class="welcome-toobei">您好，欢迎您来到T呗！</span>
+	    <a class="login-toobei none" href="/module/user/login.html">登录</a>
+	    </span>
+	    <span class="none"><a href="/module/user/register.html" class="register-button">注册领红包</a></span>
+	    <span><a href="/module/aboutUs/companyIntroduce.html">关于我们</a></span>                        
+	    <span><a href="/module/aboutUs/helpCenter.html">帮助中心</a></span>                        
+        <span><a href="/module/platformFile/platformFile.html">网贷平台档案</a></span>                                           
+	    <span>
+	    <a class="wechat">
+	    <img src="/image/topbar_wechat.png">
+	    <span class="icon"><img src="/image/topbar_qrcode.png" alt="T呗二维码"></span>
+	    </a>
+	    </span>
+	    </div>
+	    </div>
+	    </div>
+
+	    <!--   头部工具栏    -->
+	    <div class="site-header">
+	    <div class="container">
+	    <div class="header-left">
+	    <a href="/index.html"><img src="/image/tb_logo.png" alt="T呗LOGO"></a>
+        <span class="vertically"></span>
+	    </div>
+	    <div class="header-right">
+	    <ul>
+	    <li><a href="/index.html">首页</a></li>
+	    <li><a href="/module/product/list.html">选产品</a></li>
+	    <li><a href="/module/platform/platform.html">选平台</a></li>
+	    <li><a href="/module/safe/safe.html">安全保障</a></li>
+	    <li><a href="/module/account/account.html" class="active">我的账户</a></li>
+	    </ul>
+	    </div>
+	    </div> 
+	    </div>
+
+		<div class="mytbmain">		
+			<div class="mytbcontent clearfloat"> 
+				<div class="toobei-nav" id="">
+					<ul class="header headertop">
+						<li>
+							<img id="touxiang" class='touxiang' src="/image/touxiang2.png"/>
+						</li>
+						<li id="mobile">　</li>
+						<li>
+							<span class="tips" id="usernameAuthentication">已认证</span><!--已认证 tips_renz_1-->
+							<span class="tips tips_moblie_1">已绑定</span><!--已认证 tips_moblie_1-->
+							<span class="tips" id="bindingCard">已认证</span><!--已认证 tips_bankcard_1-->
+						</li>
+						<li class="bindingCardTips" style="display:none">
+							您尚未绑定银行卡，<a href="/module/account/bindBankCard.html">立即绑定</a>
+						</li>
+						<li class="goAuthentication" style="display:none;">
+							您尚未实名认证，<a href="/module/account/bindBankCard.html">去认证</a>
+						</li>
+					</ul>
+
+					<ul class="mytblist">
+						<li class="active"><a href="/module/investment/investment.html" class="mytip tipstz">我的投资</a></li>
+						<li><a href='/module/planner/planner.html' class="mytip tipslc">我的理财师</a></li>
+						<li><a class="mytip tipshb" href="/module/redPacket/redPacket.html">我的红包</a></li>
+						<li><a class="mytip tipsset" href="/module/account/account.html">账户设置</a></li>
+						<li><a class="mytip tipsms" href="/module/messageCenter/messageCenter.html">消息中心</a></li>
+						<li><a class="mytip tipsment" href="/module/platformManage/platformManage.html">平台管理</a></li>
+						<li><a class="mytip tipsout" id="logOut">退出登录</a></li>
+					</ul>
+				</div>
+				<div class="rightcontent ">
+					<div class="moneyCountbox">
+						<ul class="moneyCount clearfloat">
+							<li>T呗账户余额(元) <strong id="balance" class='red'>0.00</strong></li>
+							<li>累计收益(元) <strong id="income">0.00</strong></li>
+						</ul>
+					</div>
+					<div style="height:20px;line-height:20px;background-color:#edf0f3;"></div>
+					<div class="moneyrecode">
+					    <div class="investment-tile clearfloat">
+					    	<div class="left"><h1>投资记录</h1></div>
+					    	<div class="right">
+					    	<span>如数据与实际投资数据不符，请点击右侧QQ图标向在线客服进行反馈</span>
+					    	</div>
+					    </div>
+
+						<div class="tab">
+							<span class="current" data-value="1">募集中</span>
+							<span data-value="2">回款中</span>
+							<span data-value="3">已完成</span>
+						</div>
+
+						<div class="recodeTab">
+							<div class="allList" id="list_0">
+								<table class="moneyTab1">
+									<thead>
+										<tr>
+											<th>产品名称</th>
+											<th>产品期限</th>
+											<th>投资金额</th>
+											<th>预期收益</th>
+											<th>购买时间</th>										
+<!-- 											<th>起息时间</th> -->
+											<th>到期时间</th>
+										</tr>
+									</thead>
+								
+								    <tbody id="investmentTab" >
+
+								    </tbody>
+								</table>
+							</div>
+						</div>
+						<div id="pager" class="pager">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!--   网页右侧固定栏   -->
+        <div class="site-fixedbar">
+        <div>
+        <a href="https://www.toobei.com/module/activities/newRegister.html" target="_blank">
+        <img src="/image/new_packt_icon.png" alt="新手红包">            
+        </a>
+        </div>
+        <ul>
+        <li>              
+        <a class="telphone">
+        <i></i><br>
+        <span>电话</span>
+        <div class="telphoneNum">400-888-6987</div>
+        </a>
+        </li>
+
+        <li>
+        <a class="customerservice">
+        <i></i><br>
+        <span>客服</span>
+        <div class="line-customer" onclick='easemobim.bind({tenantId: "13522"})'>
+        在线客服
+        </div>
+        </a>
+        </li>
+
+        <li>
+        <a class="wechat">
+        <i></i><br>
+        <span>微信</span>
+        <div class="QRCode">
+        <img src="/image/footer_qrcode_icon.png" alt="T呗二维码">
+        <p>微信描一描</p>
+        <p>关注微信公众号</p>
+        </div>
+        </a>
+        </li>
+
+        <li>
+        <a class="backtop" onclick="backTop()">
+        <i></i><br>
+        <span>顶部</span>
+        <div id="fiexbar-backtop" class="back" onclick="backTop()">返回顶部</div>
+        <script type="text/javascript">
+        function backTop (){$("body,html").animate({scrollTop:0}, "normal");}
+        </script> 
+        </a>
+        </li>
+        </ul>
+        </div>
+
+        <!--   网页底部   -->
+        <div class="site-footer">
+                <div class="footer-adbar">
+                        <div class="container">
+                                <ul class="clearfix">
+                                        <li class="first-child">
+                                                <img src="/image/footer_select_reason.png" alt="选择T呗的理由">
+                                        </li>
+                                        <li class="two-child">
+                                                <img src="/image/footer_reason_01.png" alt="律盾保障计划">
+                                                <h3>律盾保障计划</h3>
+                                                <span>提供维权基金、平台风险保障金、顶尖的律师团队</span>
+                                        </li>
+                                        <li class="three-child">
+                                                <img src="/image/footer_reason_02.png" alt="甄选优质平台">
+
+                                                <h3>甄选优质平台</h3>
+                                                <span>权威的实地认证考察、调研、资质审核</span>
+                                        </li>
+                                        <li class="four-child">
+                                                <img src="/image/footer_reason_03.png" alt="专业的安全评级">
+
+                                                <h3>专业的安全评级</h3>
+                                                <span>综合平台线上、线下运营管理水平</span>
+                                        </li>
+                                        <li class="last-child">
+                                                <img src="/image/footer_reason_04.png" alt="大数据实时监测">
+
+                                                <h3>大数据实时监测</h3>
+                                                <span>数据监测、动态、舆情等大数据反馈</span>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+
+                <div class="footer-linkbar">
+                        <div class="container">
+                                <div class="linkbar-top">
+                                        <div class="linkbar-nav">
+                                                <div class="clearfix">
+                                                        <p><a href="/module/aboutUs/companyIntroduce.html">公司简介</a></p>
+                                                        <p><a href="/module/aboutUs/notice.html">T呗公告</a></p>
+                                                        <p class="none"><a href="/module/aboutUs/joint.html">商务合作</a></p>
+                                                        <p><a href="/module/aboutUs/dynamic.html">T呗动态</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                        <p><a href="/module/aboutUs/team.html">团队介绍</a></p>
+                                                        <p><a href="/module/aboutUs/helpCenter.html">帮助中心</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                        <p><a href="/module/protocol/protocol.html">注册协议</a></p>
+                                                        <p><a href="/module/safe/safe.html">安全保障</a></p>
+                                                        <p class="hidden"><a href="">行业动态</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                        <p><a href="/module/aboutUs/contact.html">联系我们</a></p>
+                                                        <p><a href="/module/aboutUs/report.html">媒体报道</a></p>
+                                                        <p class="hidden"><a href="">投资攻略</a></p>
+                                                </div>
+                                        </div>
+                                        <div class="linkbar-qrcode">
+                                                <div><img src="/image/footer_qrcode_icon.png" alt="T呗二维码"></div>
+                                                <div class="wechat">T呗官方公众号</div>
+                                        </div>
+                                        <div class="linkbar-link">
+                                                <img src="/image/footer_tel_icon.png" alt="T呗官方联系电话">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="footer-bottombar">
+                        <div class="container">
+                                <div class="companyhonest">
+                                        <a href="http://www.bcpcn.com/product/rz/bq/BCP1894497542.html" target="_blank">
+                                                <img src="/image/site_identity_red2.png" alt="T呗已通过中网权威数据库对比，获得“诚信企业”身份验证">
+                                        </a>
+                                        <a style="display: none;" href="https://ss.knet.cn/verifyseal.dll?sn=e16091944030064723ip1l000000&amp;ct=df&amp;a=1&amp;pa=0.47373637918780176"
+                                           target="_blank">
+                                                <img src="/image/site_identity_red.png" alt="T呗已通过中网权威数据库对比，获得“可信网站”身份验证">
+                                        </a>
+                                </div>
+                                <div class="companyrecord">
+                                        <span>Copyright©2016 &nbsp;&nbsp; 深圳市前海领会科技有限公司</span>
+                                        <a href="http://www.miitbeian.gov.cn" target="_blank">&nbsp; 粤ICP备16032193号-2</a>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <script type="text/javascript" src='/lib/main.js'></script>
+        <script src='https://kefu.easemob.com/webim/easemob.js' async='async'></script>
+		<script type="text/javascript">
+          seajs.use("./investment/investment"); 
+        </script>
+        
+	</body>
+</html>

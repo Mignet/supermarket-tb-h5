@@ -1,0 +1,201 @@
+.pm-content {
+  width: 1200px;
+  margin: 0 auto;
+  border-top: solid #ECF0F3 20px;
+}
+.pm-content-back {
+  width: 100%;
+  background: #ECF0F3;
+}
+.pm-content-right {
+  width: 928px;
+  float: left;
+  background: #fff;
+/*  height:965px;*/
+}
+.pm-content-title {
+  border-bottom: solid 1px #ccc;
+  overflow: hidden;
+}
+.pm-content-list-wrapper{
+  margin: 0 10px;
+/*  overflow: hidden;*/
+/*  width:102%;*/
+}
+
+.pm-content-list-solo{
+  margin-top: 20px;
+  float:left;
+  position: relative;
+  width: 218px;
+  margin-right: 10px;
+  border: 1px solid #dcdcdc;
+}
+.pm-content-list-solo .pm-content-list-solo-logo{
+    width: 150px;
+    height: 46px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+.pm-content-list-solo .pm-content-list-solo-logo img{
+  width: 150px;
+  height: 46px;
+}
+.pm-content-list-solo .pm-content-list-solo-level{
+  width: 48px;
+  height: 25px;
+  position: absolute;
+  left: 13px;
+  top: 0;
+  text-align: center;
+  line-height: 20px;
+  background: #12a2f5;
+  color: #fff;
+}
+.pm-content-list-solo .pm-content-list-solo-center{
+  padding-top: 30px;
+  text-align: center;
+  color:#fd5353;
+}
+.pm-content-list-solo .pm-content-list-solo-center p{
+  font-size: 15px;
+  color: #969696;
+}
+.pm-content-list-solo .pm-content-list-solo-center h4{
+  padding-top: 15px;
+  font-size: 26px;
+  border-bottom: 1px solid #dcdcdc;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+.pm-content-list-solo .pm_content_list_product_content{
+  padding-top: 20px;
+  line-height: 20px;
+  color:#969696;
+  padding-left: 25px;
+}
+.unBindPlatform{
+  width: 720px;
+}
+.pm-content-list-solo .pm_content_list_solo_detail{
+  width: 168px;
+  height: 38px;
+  margin: 10px auto 25px;
+  background: #fd5353;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 3px;
+}
+.pm-content-list-solo .pm_content_list_solo_detail a{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+  color:#fff;
+  border-radius: 3px;
+}
+.pm-content-list-solo .pm_content_list_solo_detail a.bind-button:hover{
+  background: #e64545;
+}
+.pm-content-list-solo .pm-content-list-solo-center h4 span{
+  font-size: 18px;
+}
+.pm-content-list-solo .pm-content-list-solo-level:after{
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  border-right:24px solid  transparent;
+  border-left:24px solid transparent;
+  border-bottom: 4px solid #fff;
+}
+.pm-content-title-item {
+  float: left;
+  padding: 15px 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pm-content-title .select-item {
+  color: #FD5353;
+  border-bottom: solid 3px #FD5353;
+}
+.pm-content-list-item {
+  margin: 0 10px;
+  padding: 25px 0;
+  border-bottom: solid 1px #ccc;
+}
+.pm-content-list-item  .platform-photo img{
+  width: 100px;
+  height: 30px;
+}
+.pm-content-list-item .platform-info {
+  margin-top: 20px;
+  padding: 0 5px;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.pm-content-list-item .platform-info-item {
+  width: 20%;
+  font-size: 14px;
+  float: left;
+}
+.headertop>.bindingCardTips,.headertop>.goAuthentication{
+  top: 215px!important;
+}
+.pm-content-list-item .platform-info-text {
+  line-height: 30px;
+}
+.pm-content-list-item .platform-info .text-content {
+  font-size: 16px;
+  font-weight: bolder;
+}
+.pm-content-list-item .platform-info-btn {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  float: right;
+  margin-right: 10px;
+  background: #FD5353;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  color: #fff;
+}
+.pm-content-list-item .platform-info-btn:hover{
+  background: #e64545;
+}
+.pm-content-list-item .platform-info-btn a {
+  display: block;
+  color: #fff;
+}
+
+.pm-content .pm-pager {
+  float: right;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.data-empty{
+  height:470px;
+  line-height: 470px;
+  text-align: center;
+  color: #c8c8c8;
+  font-size: 48px;
+}
+
+.data-empty p:before{
+  content: '';
+  display: inline-block;
+  background: url(/image/nolist.png) no-repeat;
+  width:70px;
+  height: 55px;
+  vertical-align: sub;
+}
+
+.static-gray{
+    background-color: #dcdcdc!important;
+    cursor: default!important;
+}
+

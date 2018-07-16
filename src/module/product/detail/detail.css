@@ -1,0 +1,190 @@
+/*detail start*/
+.site-detail{
+  width: 1200px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.detail-left{
+  width: 999px;
+  height: 238px;
+  border: 1px solid #dcdcdc;
+  float: left;
+}
+.detail-left .detail-top{
+  height: 148px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.detail-logo{
+  width: 248px;
+  float: left;
+  position: relative;
+  height: 100px;
+  margin: 24px 0;
+  border-right: 1px solid #dcdcdc;
+}
+.detail-logo img{
+  display: block;
+  width: 135px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.detail-text{
+  float: left;
+  width: 725px;
+  padding-left: 25px;
+}
+.detail-text h2{
+  margin: 30px 0;
+}
+.detail-text h2 p{
+  float: left;
+  color: #646464;
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 20px;
+}
+.detail-text h2 span{
+  float: left;
+  color: #12a2f5;
+  font-size: 12px;
+  text-align: center;
+  margin: 2.5px 0;
+  padding: 2.5px 11px;
+  border:1px solid #12a2f5;
+  margin-right: 12px;
+  border-radius: 4px;
+}
+.detail-text ul li{
+  float: left;
+  width: 234px;
+  padding-bottom: 14px;
+}
+.detail-bottom{
+  padding-left: 40px;
+}
+.detail-bottom dl{
+  float: left;
+  width: 235px;
+}
+.detail-bottom dl dt{
+  padding-top: 15px;
+  color: #969696;
+  padding-bottom: 18px;
+}
+.detail-bottom dl dd{
+  font-size: 30px;
+  font-weight: 500;
+}
+.detail-bottom dl span{
+  font-size: 20px;
+}
+.detail-bottom dl.year-rate dd{
+  color: #f28a10;
+}
+
+.detail-right{
+  float: left;
+  width: 198px;
+  height: 238px;
+  border: 1px solid #dcdcdc;
+  border-left: 0;
+  position: relative;
+}
+.detail-enter{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  height: 198px;
+}
+.detail-enter .project-progress{
+  padding-left: 30px;
+}
+.detail-enter .project-progress h2{
+  color: #323232;
+}
+.progress-percent p{
+  float: left;
+  width: 120px;
+  height: 4px;
+  background-color: #dcdcdc;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 5.5px;
+  margin-right: 8px;
+}
+.progress-percent p span{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;
+  background-color: #24a9f6;
+}
+.progress-percent i{
+  font-size: 12px;
+  color: #969696;
+  float: left;
+  line-height: 15px;
+}
+.balance-title{
+  padding-top: 15px;
+  padding-bottom: 8px;
+  color: #969696;
+}
+.balance-num{
+  color: #f28a10;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+.productBuyButton{
+  display: block;
+  width: 137px;
+  height: 40px;
+  background-color: #24a9f6;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.attention{
+  padding-top: 20px;
+  font-size: 12px;
+  color: #969696;
+  text-align: center;
+}
+
+/*
+  产品信息
+*/
+.site-product-msg{
+  padding-top: 20px;
+}
+.site-product-msg h2{
+  height: 60px;
+  border-bottom: 1px solid #dcdcdc;
+  line-height: 60px;
+  color: #323232;
+  font-size: 16px;
+  background-color: #fafafa;
+  padding-left: 22px;
+}
+.product-msg{
+  padding:22px 40px 0;
+  font-size: 16px;
+  color: #969696;
+  line-height: 1.5em;
+  background-color: #fff;
+  min-height: 575px;
+}

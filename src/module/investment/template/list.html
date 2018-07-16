@@ -1,0 +1,30 @@
+<%
+if(obj.datas.length > 0){
+    _.each(obj.datas,function(o,index){
+    var arr = o.day.split(",");
+    if(arr.length == 2){
+    	var deadLineText = arr[0] + '<span class="unit">'+arr[1]+'</span>';
+    }
+    if(arr.length == 4){
+    	var deadLineText = arr[0] + '<span class="unit">'+arr[1]+'</span> ~'+ arr[2] +'<span class="unit">'+arr[3]+'</span>';
+    } 
+%>
+	<tr>
+		<td class="ellipsis"><%=o.productName%></td>
+		<td><%=deadLineText%></td>
+		<td><%=o.investAmount%></td>
+		<td><%=o.profit%></td>
+		<td><%=o.startDate%></td>
+<!-- 		<td><%=o.updateDate%></td> -->
+		<td><%=o.endDate%></td>
+	</tr>
+<%
+})
+}else{
+%>
+	<tr class="nolist"><td colspan="7">暂无投资记录</td></tr>
+<% 
+}
+%>
+
+

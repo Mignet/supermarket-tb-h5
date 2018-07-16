@@ -1,0 +1,149 @@
+.forget-bg{
+    background: url(/image/login_bg.png) no-repeat;
+    min-height: 724px;
+}
+
+.forget-content-1{
+    background: url(/image/login_icon_1.png) no-repeat;
+    height: 724px;
+}
+
+.forget-content-2{
+    background: url(/image/login_icon_2.png) no-repeat;
+    height: 724px;
+}
+
+.forget-wrapper{
+	position: absolute;
+	top:80px;
+	right:44px;
+	width:388px;
+	height:520px;
+	background-color: #fff;
+	border:4px solid #d0d3d5;
+	border-radius: 5px;
+}
+
+.forget-title{
+	height:62px;
+	line-height: 62px;
+	background-color: #fbfbfb;
+	border-bottom: 1px solid #dcdcdc;	
+}
+
+.forget-title h1{
+	font-size: 24px;
+	color:#323232;
+	margin-left: 20px;
+}
+
+.form{
+	width:296px;
+	margin:0 auto;
+}
+
+.form > div{
+	margin-top:25px;
+}
+
+.form .errorWrapper{
+	margin-top: 20px;
+	height:15px;
+}
+
+.form .inputWrapper{
+	position: relative;
+	height:45px;
+	line-height: 45px;	
+	border:1px solid #dcdcdc;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.form .codeWrapper{
+	position: relative;
+	height:45px;
+	line-height: 45px;	
+}
+
+.form .inputWrapper label{
+	position: absolute;
+	right:19px;
+	top:0;
+}
+
+.form .inputWrapper label img{
+    vertical-align: middle;
+}
+
+.form .codeWrapper .left{
+	float: left;
+	border:1px solid #dcdcdc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.form .codeWrapper .left input{
+	width:155px;
+}
+
+.form .codeWrapper .right{
+	float: right;
+	text-align: center;
+	overflow: hidden;
+}
+
+.form .codeWrapper .right a{
+	display: block;
+    width:112px;
+    font-size: 14px;
+	border-radius: 3px;
+    color:#12a2f5;
+	border:1px solid #12a2f5;	
+    cursor: pointer;
+    box-sizing:border-box;
+}
+
+.form .codeWrapper .right a.sended{
+	cursor:wait;
+	cursor:not-allowed;
+    color:#dcdcdc;
+	border:1px solid #12a2f5;
+}
+
+
+.form input{
+/*    height:40px!important;*/
+/*    line-height: 40px!important;*/
+    height:45px;
+    border:none;
+    outline: none;
+    padding-left:15px;
+    width:280px;
+    font-size: 15px;
+}
+
+.form .protocolWrapper a{
+	font-size: 14px;
+	color:#12a2f5;	
+}
+
+.form .bottonWrapper{
+	height:40px;
+	line-height: 40px;	
+	text-align: center;
+}
+
+.form .findpasswrodBtn{
+	display: block;
+	border-radius: 3px;
+	width:100%;
+	height:100%;
+	cursor: pointer;
+	font-size: 16px;
+	color:#fff;
+	background-color: #24a9f6;
+
+}
+
+

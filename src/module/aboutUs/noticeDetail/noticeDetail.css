@@ -1,0 +1,49 @@
+.notice-detail {
+    margin: 0 90px;
+    padding: 36px 0;
+    background-color: #fff;
+    border-bottom: 1px dashed #dcdcdc;
+}
+
+.notice-detail h1 {
+    font-size: 28px;
+    color: #646464;
+    text-align: center;
+}
+
+.notice-detail p.releaseTime {
+    color: #969696;
+    padding-top: 20px;
+    padding-bottom: 53px;
+    text-align: center;
+}
+
+.pager-nav {
+    padding: 30px 90px 235px 90px;
+    background-color: #fff;
+}
+
+.pager-nav p {
+    color: #c8c8c8;
+}
+
+.pager-nav .before {
+    float: left;
+}
+
+.pager-nav .next {
+    float: right;
+}
+
+.pager-nav p a {
+    color: #646464;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+p, span {
+    line-height: 1.8em;
+}

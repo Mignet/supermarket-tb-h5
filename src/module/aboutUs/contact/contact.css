@@ -1,0 +1,35 @@
+.wrapper {
+    padding-bottom: 30px;
+}
+
+.right-content h2 {
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.right-content img {
+    display: block;
+    margin: 30px auto 0;
+}
+
+.right-content h3 {
+    font-size: 18px;
+    color: #646464;
+    padding-top: 40px;
+    padding-left: 45px;
+}
+
+.right-content p {
+    padding-left: 45px;
+    padding-top: 15px;
+    color: #969696;
+}
+
+.chart {
+    color: #128df5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.chart:hover {
+    text-decoration: underline !important;
+}

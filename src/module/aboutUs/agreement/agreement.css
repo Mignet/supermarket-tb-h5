@@ -1,0 +1,37 @@
+.wrapper {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dcdcdc !important;
+}
+
+.wrapper h1,
+.wrapper p,
+.wrapper h3,
+.wrapper i {
+    padding: 0 12px;
+}
+
+.wrapper h1 {
+    padding-top: 24px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #646464;
+}
+
+.wrapper p {
+    line-height: 25px;
+    color: #969696;
+}
+
+.wrapper h3 {
+    padding-top: 27px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #969696;
+}
+
+.wrapper i {
+    display: block;
+    line-height: 25px;
+    color: #969696;
+}

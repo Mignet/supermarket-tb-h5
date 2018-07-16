@@ -1,0 +1,223 @@
+.site-content{
+    min-height: 0;
+}
+.minHeight{
+    min-height: 1000px!important;
+}
+.site-filterWrapper {
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.site-filter {
+    padding: 0 12px;
+}
+
+.site-filter .filter-list-box {
+    height: 46px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.site-filter > div.last {
+    border: 0;
+}
+
+.site-filter ul.filter-list {
+    height: 100%;
+    float: left;
+    max-width: 1030px;
+}
+
+.filter-list li {
+    float: left;
+}
+
+.filter-title {
+    float: left;
+    width: 93px;
+    line-height: 22px;
+    margin: 12px 0;
+    color: #646464;
+}
+
+.filter-list li {
+    width: 108px;
+}
+
+.filter-list li.filter-first {
+    width: 73px;
+}
+
+.filter-list li a {
+    float: left;
+    line-height: 22px;
+    padding: 0 7px;
+    margin: 12px 0;
+    font-size: 14px;
+    border-radius: 5px;
+    max-width: 87%;
+    cursor: pointer;
+}
+
+.filter-list li a:hover {
+    background: #c8c8c8;
+    color: #fff;
+}
+
+.filter-list li.active a {
+    background-color: #24a9f6;
+    color: #fff;
+}
+
+/*平台列表*/
+.hotplatorm-info {
+    width: 102%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.hotplatorm-info li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.hotplatorm-info li:last-child {
+    margin-right: 0px;
+}
+
+.hotplatorm-info .info-title {
+    width: 294px;
+    height: 110px;
+    margin-bottom: 9px;
+}
+
+.hotplatorm-info .info-title a.adv-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hotplatorm-info .info-title img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hotplatorm-info .info-content {
+    position: relative;
+    background-color: #fff;
+    width: 294px;
+}
+
+.hotplatorm-info .platform-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -35px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    background: url(/image/logo_wrap_icon.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.hotplatorm-info .platform-logo img {
+    width: 80px;
+    margin-top: 36px;
+}
+
+.hotplatorm-info .platform-detail {
+    position: relative;
+    padding-top: 70px;
+}
+
+.hotplatorm-info .platform-detail:hover {
+    box-shadow: -0.5px -0.5px 5px 0.5px rgba(146, 162, 178, .5), 0.5px 0.5px 5px 0.5px rgba(146, 162, 178, .5);
+}
+
+.hotplatorm-info .platform-annualyield {
+    text-align: center;
+}
+
+.hotplatorm-info p.yield-name {
+    font-size: 15px;
+    color: #969696;
+    margin-bottom: 5px;
+}
+
+.hotplatorm-info p.yield-value {
+    font-size: 28px;
+    color: #f28a10;
+}
+
+.hotplatorm-info span.unit {
+    font-size: 20px;
+}
+
+.hotplatorm-info .platform-general {
+    margin-top: 15px;
+    padding-top: 17px;
+    border-top: 1px solid #ececec;
+    overflow: hidden;
+}
+
+.platform-general .product-deadline {
+    float: left;
+    width: 38%;
+    font-size: 14px;
+    color: #969696;
+    text-align: center;
+}
+
+.platform-general .product-number {
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+    color: #969696;
+    border-left: 1px dashed #ececec;
+    border-right: 1px dashed #ececec;
+}
+
+.platform-general .product-level {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+    color: #969696;
+}
+
+.platform-general p {
+    line-height: 2em;
+}
+
+.platform-general p.value {
+    font-size: 14px;
+    color: #323232;
+}
+
+.hotplatorm-info .platform-button {
+    padding: 18px 0;
+}
+
+.platform-button a {
+    display: block;
+    margin: 0 auto;
+    width: 188px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #12a2f5;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.platform-button a:hover {
+    background-color: #118fd8;
+}

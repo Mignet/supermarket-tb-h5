@@ -1,0 +1,176 @@
+.site-content{
+    min-height: 807px;
+}
+.packet-all-count {
+    position: absolute;
+    left:150px;
+    top: 17px;
+    text-align: center;
+    display: block;
+    background:url('/image/account_radius.png') no-repeat center center;
+    background-size: 100% auto;
+    color: #24a9f6;
+    width: 22px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+}
+.site-content {
+    margin: 10px 0;
+}
+.nav-right {
+    box-sizing: border-box;
+}
+.content-packet{
+    background-color: #fff;
+    border:1px solid #e1e1e1;
+    border-top: 0;
+    min-height: 687px;
+}
+.content-head {
+    height: 60px;
+    line-height: 60px;
+    color: #323232;
+    padding-left: 20px;
+    background: #fff;
+    border-top: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+.content-tab .tab {
+    background-color: #fafafa;
+    line-height: 59px;
+    height: 60px;
+    border-bottom: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+.content-tab .tab a {
+    float: left;
+    display: inline-block;
+    width: 158px;
+    font-size: 16px;
+    color: #323232;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-tab .tab a.active {
+    background-color: #fff;
+    color: #24a9f6;
+    border-top: 2px solid #24a9f6;
+    border-right: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+.content-packet > ul{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 27px;
+    overflow: hidden;
+}
+.no-packet-content {
+    padding: 170px 0 0 0 ;
+    text-align: center;
+}
+.no-packet-content p {
+    line-height: 200%;
+    font-size: 18px;
+}
+.packet-item {
+    float: left;
+    width: 400px;
+    height: 180px;
+    margin: 40px 0 0 40px;
+    background: url("../../../image/packet-bg-orange.png") no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.packet-item.white {
+    background: url("../../../image/packet-bg-white.png") no-repeat;
+    background-size: contain;
+}
+.packet-title {
+    position: relative;
+    line-height: 45px;
+    padding-left: 20px;
+    color: #646464;
+}
+
+.packet-title .distributePacket{    
+    position: absolute;
+    display: inline-block!important;
+    top:12px;
+    right:0;
+}
+
+.packet-count{
+    position: absolute;
+    right: 20px;
+    font-size: 15px;
+}
+.packet-left {
+    float: left;
+    width: 130px;
+}
+.packet-left img {
+    padding: 20px 15px;
+}
+.packet-money {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    text-align: center;
+    width: 130px;
+    color: #f47701;
+}
+.white .packet-money {
+    color: #969696;
+}
+.packet-money span {
+    vertical-align: super;
+    font-size: 12px;
+}
+.packet-money p.packet-money-one {
+    font-size: 24px;
+}
+.packet-money p.packet-money-two {
+    margin-top: 20px;
+    color: #f9eed2;
+}
+.white .packet-money p.packet-money-two {
+    color: #969696;
+}
+.packet-flag {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+.packet-right {
+    float: left;
+    position: relative;
+    z-index: 10;
+    width: 248px;
+    padding: 11px 0 0 22px;
+}
+.packet-right li {
+    margin-top: 11px;
+    color: #adaca8;
+}
+.packet-rolling-box {
+    display: inline-block;
+    width: 170px;
+    overflow: hidden;
+}
+.packet-rolling {
+    position: relative;
+}
+.content-page{
+    padding: 30px 0;
+    overflow: hidden;
+}
+.content-page .laypageskin_toobei{
+    margin-bottom: 0;
+}

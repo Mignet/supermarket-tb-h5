@@ -1,0 +1,458 @@
+.site-content {
+    margin: 10px 0;
+    min-height: 867px;
+}
+
+.content-header > div {
+    float: left;
+}
+
+.content-header {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    height: 106px;
+}
+
+.planner-header {
+    margin-top: 19px;
+    margin-left: 29px;
+}
+
+.planner-header img {
+    width: 68px;
+}
+
+.planner-detail {
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.planner-detail p {
+    line-height: 2em;
+}
+
+.planner-detail span {
+    color: #646464;
+    font-size: 14px;
+}
+
+.planner-detail a {
+    font-size: 12px;
+    color: #ffa200;
+}
+
+.planner-detail a.mobile {
+    color: #646464;
+}
+
+.planner-detail img {
+    vertical-align: -5px;
+}
+
+.planner-detail i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -6px;
+    margin-left: 8px;
+}
+
+.planner-level-1 {
+    background: url(/image/planner_level_1.png) no-repeat;
+}
+
+.planner-level-2 {
+    background: url(/image/planner_level_2.png) no-repeat;
+}
+
+.planner-level-3 {
+    background: url(/image/planner_level_3.png) no-repeat;
+}
+
+.planner-level-4 {
+    background: url(/image/planner_level_4.png) no-repeat;
+}
+
+.content-thead {
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+    color: #12a2f5;
+}
+
+.content-tab {
+    background-color: #fff;
+}
+
+.content-tab .tab {
+    background-color: #fafafa;
+    line-height: 59px;
+    height: 60px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.content-tab .tab a {
+    float: left;
+    display: inline-block;
+    width: 158px;
+    font-size: 16px;
+    color: #323232;
+    text-align: center;
+    cursor: pointer;
+}
+
+.content-tab .tab a.active {
+    background-color: #fff;
+    color: #24a9f6;
+    border-top: 2px solid #24a9f6;
+    border-right: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}
+
+.content-product {
+    margin-top: 10px;
+}
+
+.content-product li {
+    position: relative;
+    height: 150px;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: #fff;
+}
+
+.content-product li div.platformLogo {
+    float: left;
+    width: 160px;
+    height: 100px;
+    margin: 20px 0;
+    margin-left: 30px;
+    /*	border:1px solid #dcecec;*/
+}
+
+.content-product li div.platformLogo .logo-wrapper {
+    width: 120px;
+    height: 110px;
+    background: url(/image/platform_logo_solid.png);
+}
+
+.content-product li .logo-wrapper p.first {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.content-product li .logo-wrapper p.first img {
+    width: 93px;
+    height: 48px;
+}
+
+.content-product li .logo-wrapper p.last {
+    padding: 15px;
+    text-align: center;
+}
+
+.content-product li .logo-wrapper p.last span {
+    display: inline-block;
+    background-color: #f7f8f8;
+    padding: 4px 0;
+    color: #969696;
+    font-size: 12px;
+    width: 93px;
+}
+
+.content-product li div.productDetail {
+    float: left;
+    width: 708px;
+    height: 100px;
+    margin: 25px 30px 25px 0;
+}
+
+.productDetail .detail-title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #323232;
+}
+.productDetail .detail-title h1{
+    font-size: 16px;
+    height: 19px;
+}
+.productDetail .detail-title a{
+    float: left;
+    color: #323232;
+    padding-right: 12px;
+    line-height: 19px;
+}
+.productDetail .detail-title a:hover{
+    color: #12a2f5;
+}
+.productDetail .detail-field > div {
+    float: left;
+    width: 25%;
+}
+.productDetail .detail-title h1 span {
+    float: left;
+    padding: 0 11px;
+    line-height: 17px;
+    border: 1px solid #219ae0;
+    margin-right: 12px;
+    font-size: 12px;
+    color: #12a2f5;
+    border-radius: 5px;
+}
+
+.productDetail .detail-field p.first {
+    color: #969696;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.productDetail .detail-field p.last {
+    color: #646464;
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+.productDetail .detail-field p.last span {
+    font-size: 14px;
+    color: #969696;
+}
+
+.productDetail .detail-field .percentageNum {
+    margin-top: -10px;
+    color: #969696;
+    font-size: 14px;
+    height: 14px;
+    text-align: right;
+}
+
+.productDetail .detail-field .progress {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    height: 6px;
+    width: 160px;
+    border-radius: 3px;
+    background-color: #e1e1e1;
+    display: inline-block;
+    text-align: left;
+}
+
+.productDetail .detail-field .percentage {
+    position: relative;
+    top: -6px;
+    display: inline-block;
+    height: 6px;
+    background-color: #12a2f5;
+}
+
+.productDetail .detail-field .btn-wrapper {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.productDetail .detail-field a.button {
+    display: inline-block;
+    width: 160px;
+    line-height: 40px;
+    height: 40px;
+    background-color: #12a2f5;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+}
+.productDetail .detail-field a.button:hover{
+    background-color: #118fd8;
+}
+
+.content-page {
+    height: 30px;
+    padding: 30px 0;
+}
+
+.content-org {
+    display: none;
+}
+
+.hotplatorm-info {
+    padding-top: 10px;
+}
+
+.count-down{
+    padding-left: 15px;
+    font-size: 14px;
+    color: #969696;
+}
+.hotplatorm-info li {
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+
+.hotplatorm-info li:last-child {
+    margin-right: 0px;
+}
+
+.hotplatorm-info .info-title {
+    width: 294px;
+    height: 110px;
+    margin-bottom: 9px;
+}
+
+.hotplatorm-info .info-title a.adv-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hotplatorm-info .info-title img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hotplatorm-info .info-content {
+    position: relative;
+    background-color: #fff;
+    width: 294px;
+}
+
+.hotplatorm-info .platform-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -35px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    background: url(/image/logo_wrap_icon.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.hotplatorm-info .platform-logo img {
+    width: 80px;
+    margin-top: 36px;
+}
+
+.hotplatorm-info .platform-detail {
+    position: relative;
+    padding-top: 70px;
+    border: 1px solid #dcdcdc;
+}
+
+.hotplatorm-info .platform-detail:hover {
+    box-shadow: -0.5px -0.5px 5px 0.5px rgba(146, 162, 178, .5), 0.5px 0.5px 5px 0.5px rgba(146, 162, 178, .5);
+}
+
+.hotplatorm-info .platform-annualyield {
+    text-align: center;
+}
+
+.hotplatorm-info p.yield-name {
+    font-size: 15px;
+    color: #969696;
+    margin-bottom: 5px;
+}
+
+.hotplatorm-info p.yield-value {
+    font-size: 28px;
+    color: #f28a10;
+}
+
+.hotplatorm-info span.unit {
+    font-size: 20px;
+}
+
+.hotplatorm-info .platform-general {
+    margin-top: 15px;
+    padding-top: 17px;
+    border-top: 1px solid #ececec;
+    overflow: hidden;
+}
+
+.platform-general .product-deadline {
+    float: left;
+    width: 38%;
+    font-size: 14px;
+    color: #969696;
+    text-align: center;
+}
+
+.platform-general .product-number {
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+    color: #969696;
+    border-left: 1px dashed #ececec;
+    border-right: 1px dashed #ececec;
+}
+
+.platform-general .product-level {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-size: 14px;
+    color: #969696;
+}
+
+.platform-general p {
+    line-height: 2em;
+}
+
+.platform-general p.value {
+    font-size: 14px;
+    color: #323232;
+}
+
+.hotplatorm-info .platform-button {
+    padding: 18px 0;
+}
+
+.platform-button a {
+    display: block;
+    margin: 0 auto;
+    width: 188px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #12a2f5;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.platform-button a:hover {
+    background-color: #118fd8;
+}
+
+.no-data {
+    width: 100%;
+    height: 583px!important;
+    padding: 0!important;
+    background: url(../../../image/no_data.png) #fff no-repeat center 40%;
+    border: 0!important;
+    margin: 0!important;
+}
+
+.no-data p {
+    text-align: center;
+    font-size: 24px;
+    color: #c8c8c8;
+    padding-top: 350px;
+}
+
+.fs {
+    font-size: 18px!important;
+    margin-top: 16px!important;
+}
+
+.cr {
+    color: #f28a10!important;
+}
+.btn-wrapper{
+    cursor: pointer;
+}

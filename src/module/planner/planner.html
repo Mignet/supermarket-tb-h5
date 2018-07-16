@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>我的理财师-T呗（投呗） </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="./planner.css">
+    <!--[if lt IE 9]>
+    <script src="./component/html5shiv/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="site-wrapper">
+    <!--   顶部工具栏    -->
+    <div class="site-topbar">
+        <div class="container">
+            <div class="topbar-left">
+                <span><img src="/image/index-tel.png"></span>
+                <span>服务热线 : </span>
+                <span>400-888-6987</span>
+                <span class="margin">工作日 : 9:00-12:00</span>
+                <span>13:30-18:00</span>
+            </div>
+            <div class="topbar-right">
+                <span>
+                    <span class="welcome-toobei">您好，欢迎您来到T呗！</span>
+                    <a class="login-toobei none" href="/module/user/login.html">登录</a>
+                </span>
+                <span class="none"><a href="/module/user/register.html" class="register-button">注册领红包</a></span>
+                <span><a href="/module/aboutUs/companyIntroduce.html">关于我们</a></span>
+                <span><a href="/module/aboutUs/helpCenter.html">帮助中心</a></span>
+                <span><a href="/module/platformFile/platformFile.html">网贷平台档案</a></span>
+                <span>
+                    <a class="wechat">
+                        <img src="/image/topbar_wechat.png">
+                        <span class="icon"><img src="/image/topbar_qrcode.png" alt="T呗二维码"></span>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--   头部工具栏    -->
+    <div class="site-header">
+        <div class="container">
+            <div class="header-left">
+                <a href="/index.html"><img src="/image/tb_logo.png" alt="T呗LOGO"></a>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="/module/product/list.html">选产品</a></li>
+                    <li><a href="/module/platform/platform.html">选平台</a></li>
+                    <li><a href="/module/safe/safe.html">安全保障</a></li>
+                    <li><a href="/module/account/account.html" class="active">我的账户</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 网页主体内容 -->
+    <div class="site-content">
+        <div class="container clearfix">
+            <div class="nav-left">
+                <div class="nav-header">
+                    <p class="personal-header">
+                        <img src="/image/personal_header.png" alt="个人头像">
+                    </p>
+                    <p class="personal-mobile"></p>
+                    <p class="personal-setting">
+                        <a><span class="identify"></span></a>
+                        <a class="active"><span class="mobile"></span></a>
+                        <a><span class="card"></span></a>
+                    </p>
+                </div>
+                <div class="nav-tab">
+                    <ul>
+                        <li>
+                            <a href="/module/account/account.html">
+                                <span class="account"></span>
+                                <span>T呗账户</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/module/planner/planner.html" class="active">
+                                <span class="planner"></span>
+                                <span>我的理财师</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/module/packet/packet.html">
+                                <span class="packet"></span>
+                                <span>我的红包</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/module/setting/setting.html">
+                                <span class="setting"></span>
+                                <span>账户设置</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/module/organization/organization.html">
+                                <span class="org"></span>
+                                <span>平台管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/module/message/message.html">
+                                <span class="message"></span>
+                                <span>消息中心</span>
+                            </a>
+                        </li>
+                        <li id="loginOut" class="last-child">
+                            <a>
+                                <span class="loginout"></span>
+                                <span>退出</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="content-header clearfix">
+                    <div class="planner-header">
+                        <img id="planner-headerLogo" src="/image/planner_header.png" alt="理财师">
+                    </div>
+                    <div class="planner-detail">
+                        <p>
+                            <span id="plannerName"></span>
+                            <i id="plannerLevel"></i>
+                            <a id="plannerLevelName">----</a>
+                        </p>
+                        <p>
+                            <img src="/image/planner_mobile.png" alt="理财师Logo">
+                            <a id="plannerMobile" class="mobile">------</a>
+                        </p>
+                    </div>
+                </div>
+                <h1 class="content-thead">理财师推荐</h1>
+                <div class="content-tab">
+                    <div class="tab clearfix">
+                        <a class="active" data-value="1" style="border-left:none">产品推荐</a>
+                        <a data-value="2">平台推荐</a>
+                    </div>
+                    <div class="content-product">
+                        <ul id="recommendProductList">
+                            <script id="productTpl" type="text/template">
+                                <%
+                                _.each(obj,function(data){
+                                %>
+                                <li class="clearfix">
+                                    <div class="platformLogo">
+                                        <div class="logo-wrapper">
+                                            <p class="first"><img src="<%=config.imageUrl+data.productLogo + '?f=png'%>" alt="<%=data.orgName%>"></p>
+                                            <p class="last"><span>安全等级：<%=data.gradeText%></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="productDetail">
+                                        <div class="detail-title">
+                                            <h1 class="clearfix"><a href="/module/product/detail.html?productId=<%=data.productId%>"><%=data.productName%></a><%=data.tagListStr%></h1>
+                                        </div>
+                                        <div class="detail-field clearfix">
+                                            <div>
+                                                <p class="first">可购买金额</p>
+                                                <p class="last fs"><%=data.saleAmout%>元</p>
+                                            </div>
+                                            <div>
+                                                <p class="first">年化收益</p>
+                                                <p class="last cr"><%=data.yearRate%><span class="cr">%</span></p>
+                                            </div>
+                                            <div>
+                                                <p class="first">产品期限</p>
+                                                <p class="last"><%=data.deadLineText%></p>
+                                            </div>
+                                            <div>
+                                                <div class="count-down" style="display: none;"></div>
+                                                <div class="percentageNum <%=data.progressClass%>">
+                                                    <span><%=data.percentage%></span>
+                                                </div>
+                                                <div class="<%=data.progressClass%>" style="text-align:right;">
+                                                    <span class="progress">
+                                                        <span class="percentage" style="width:<%=data.percentage%>"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="btn-wrapper" data-number="<%=data.orgNumber%>"
+                                                     data-name="<%=data.orgName%>" data-productid="<%=data.productId%>"
+                                                     data-logo="<%=config.imageUrl+data.productLogo%>"
+                                                     data-orgIsstaticproduct="<%=data.orgIsstaticproduct%>"
+                                                     data-orgJointType="<%=data.orgJointType%>">
+                                                    <a class="button">购买</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <%});%>
+                            </script>
+                        </ul>
+                    </div>
+
+                    <div class="content-org">
+                        <ul id="recommendOrgList" class="hotplatorm-info clearfix">
+                            <script id="orgTpl" type="text/template">
+                                <%
+                                _.each(obj,function(data){
+                                var arr = data.deadLineValueText.split(',');
+                                if(arr.length == 2){
+                                data.deadLineText = $.trim(arr[0])+"<span>"+$.trim(arr[1])+"</span>";
+                                }else if(arr.length == 4){
+                                data.deadLineText = $.trim(arr[0])+"<span>"+$.trim(arr[1])+"</span>~"+$.trim(arr[2])+
+                                "<span>"+$.trim(arr[3])+"</span>";
+                                }
+                                %>
+                                <li class="skip-org-detail" data-href="/module/platform/platformDetail.html?orgNo=<%=data.orgNumber%>">
+                                    <div class="info-title">
+                                        <a class="adv-link" data-href="<%=data.orgAdvertisementUrl%>" target="_blank">
+                                            <img src="<%=config.imageUrl+data.orgAdvertisement+'?f=png'%>" alt="<%=data.orgName%>">
+                                        </a>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="platform-logo">
+                                            <img src="<%=config.imageUrl+data.orgLogo+'?f=png'%>" alt="<%=data.orgName%>">
+                                        </div>
+                                        <div class="platform-detail">
+                                            <div class="platform-annualyield">
+                                                <p class="yield-name">年化收益</p>
+                                                <p class="yield-value"><%=data.minProfit+'~'+data.maxProfit%><span class="unit">%</span></p>
+                                            </div>
+                                            <div class="platform-general">
+                                                <div class="product-deadline">
+                                                    <p>产品期限</p>
+                                                    <p class="value"><%=data.deadLineText%></p>
+                                                </div>
+                                                <div class="product-number">
+                                                    <p>可投标数</p>
+                                                    <p class="value"><%=data.usableProductNums%></p>
+                                                </div>
+                                                <div class="product-level">
+                                                    <p>产品级别</p>
+                                                    <p class="value"><%=data.grade%></p>
+                                                </div>
+                                            </div>
+                                            <div class="platform-button"><a>查看详情</a></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <%});%>
+                            </script>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-page none"></div>
+            </div>
+        </div>
+    </div>
+    <!--   网页右侧固定栏   -->
+    <div class="site-fixedbar">
+        <div>
+            <a href="https://www.toobei.com/module/activities/noviceRegistration.html" target="_blank">
+                <img src="/image/new_packt_icon.png" alt="新手红包">
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a class="telphone">
+                    <i></i><br>
+                    <span>电话</span>
+                    <div class="telphoneNum">400-888-6987</div>
+                </a>
+            </li>
+            <li>
+                <a class="customerservice">
+                    <i></i><br>
+                    <span>客服</span>
+                    <div class="line-customer" onclick='easemobim.bind({tenantId: "13522"})'>在线客服</div>
+                </a>
+            </li>
+            <li>
+                <a class="wechat">
+                    <i></i><br>
+                    <span>微信</span>
+                    <div class="QRCode">
+                        <img src="/image/footer_qrcode_icon.png" alt="T呗二维码">
+                        <p>微信描一描</p>
+                        <p>关注微信公众号</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="backtop" onclick="backTop()">
+                    <i></i><br>
+                    <span>顶部</span>
+                    <div id="fiexbar-backtop" class="back" onclick="backTop()">返回顶部</div>
+                    <script type="text/javascript">
+                        function backTop() {$("body,html").animate({scrollTop: 0}, "normal");}
+                    </script>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--   网页底部   -->
+    <div class="site-footer">
+        <div class="footer-adbar">
+            <div class="container">
+                <ul class="clearfix">
+                    <li class="first-child">
+                        <img src="/image/footer_select_reason.png" alt="选择T呗的理由">
+                    </li>
+                    <li class="two-child">
+                        <img src="/image/footer_reason_01.png" alt="律盾保障计划">
+                        <h3>律盾保障计划</h3>
+                        <span>提供维权基金、平台风险保障金、顶尖的律师团队</span>
+                    </li>
+                    <li class="three-child">
+                        <img src="/image/footer_reason_02.png" alt="甄选优质平台">
+                        <h3>甄选优质平台</h3>
+                        <span>权威的实地认证考察、调研、资质审核</span>
+                    </li>
+                    <li class="four-child">
+                        <img src="/image/footer_reason_03.png" alt="专业的安全评级">
+                        <h3>专业的安全评级</h3>
+                        <span>综合平台线上、线下运营管理水平</span>
+                    </li>
+                    <li class="last-child">
+                        <img src="/image/footer_reason_04.png" alt="大数据实时监测">
+                        <h3>大数据实时监测</h3>
+                        <span>数据监测、动态、舆情等大数据反馈</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-linkbar">
+            <div class="container">
+                <div class="linkbar-top">
+                    <div class="linkbar-nav">
+                        <div class="clearfix">
+                            <p><a href="/module/aboutUs/companyIntroduce.html">公司简介</a></p>
+                            <p><a href="/module/aboutUs/notice.html">T呗公告</a></p>
+                            <p class="none"><a href="/module/aboutUs/joint.html">商务合作</a></p>
+                            <p><a href="/module/aboutUs/dynamic.html">T呗动态</a></p>
+                        </div>
+                        <div class="clearfix">
+                            <p><a href="/module/aboutUs/team.html">团队介绍</a></p>
+                            <p><a href="/module/aboutUs/helpCenter.html">帮助中心</a></p>
+                        </div>
+                        <div class="clearfix">
+                            <p><a href="/module/protocol/protocol.html">注册协议</a></p>
+                            <p><a href="/module/safe/safe.html">安全保障</a></p>
+                            <p class="hidden"><a href="">行业动态</a></p>
+                        </div>
+                        <div class="clearfix">
+                            <p><a href="/module/aboutUs/contact.html">联系我们</a></p>
+                            <p><a href="/module/aboutUs/report.html">媒体报道</a></p>
+                            <p class="hidden"><a href="">投资攻略</a></p>
+                        </div>
+                    </div>
+                    <div class="linkbar-qrcode">
+                        <div><img src="/image/footer_qrcode_icon.png" alt="T呗二维码"></div>
+                        <div class="wechat">T呗官方公众号</div>
+                    </div>
+                    <div class="linkbar-link">
+                        <img src="/image/footer_tel_icon.png" alt="T呗官方联系电话">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottombar">
+            <div class="container">
+                <div class="companyhonest">
+                    <a href="http://www.bcpcn.com/product/rz/bq/BCP1894497542.html" target="_blank">
+                        <img src="/image/site_identity_red2.png" alt="T呗已通过中网权威数据库对比，获得“诚信企业”身份验证">
+                    </a>
+                    <a style="display: none;" href="https://ss.knet.cn/verifyseal.dll?sn=e16091944030064723ip1l000000&amp;ct=df&amp;a=1&amp;pa=0.47373637918780176" target="_blank">
+                        <img src="/image/site_identity_red.png" alt="T呗已通过中网权威数据库对比，获得“可信网站”身份验证">
+                    </a>
+                </div>
+                <div class="companyrecord">
+                    <span>Copyright©2016 &nbsp;&nbsp; 深圳市前海领会科技有限公司</span>
+                    <a href="http://www.miitbeian.gov.cn" target="_blank">&nbsp; 粤ICP备16032193号-2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src='/lib/main.js'></script>
+    <script src='https://kefu.easemob.com/webim/easemob.js'></script>
+    <script type="text/javascript">
+        seajs.use('./planner')
+    </script>
+</body>
+</html>

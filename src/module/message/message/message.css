@@ -1,0 +1,109 @@
+.nav-left {
+    margin-top: 10px;
+}
+
+.nav-right {
+    margin-top: 10px;
+}
+
+.message-all-count {
+    position: absolute;
+    left: 150px;
+    top: 17px;
+    text-align: center;
+    display: block;
+    background: url('/image/account_radius.png') no-repeat center center;
+    background-size: 100% auto;
+    color: #24a9f6;
+    width: 22px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+}
+
+.content-head {
+    height: 60px;
+    line-height: 60px;
+    color: #323232;
+    padding-left: 20px;
+    background: #fff;
+}
+
+.nav-right {
+    position: relative;
+}
+
+.nav-right .set-has-read {
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    background-color: #24a9f6;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-list {
+    width: 100%;
+}
+
+.message-list ul {
+    border: 1px solid #e1e1e1;
+    border-top: 0;
+    margin-bottom: 30px;
+}
+
+.message-list ul li {
+    padding: 0 16px;
+    background-color: #fff;
+    border-top: 1px solid #dcdcdc;
+    cursor: pointer;
+}
+
+.message-list li h2 {
+    padding-top: 22px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.message-list li h2 img {
+    float: left;
+    height: 20px;
+}
+
+.message-list li h2 .message-title {
+    float: left;
+    padding-left: 14px;
+    font-size: 18px;
+    color: #646464;
+}
+
+.message-list li h2 .message-time {
+    float: right;
+    font-size: 14px;
+    color: #969696;
+}
+
+.message-list li div {
+    padding: 20px 35px;
+    font-size: 14px;
+    color: #969696;
+}
+
+.message-list li div a {
+    color: #3057fd;
+    text-decoration: underline;
+}
+
+.message-list .un-read h2 .message-title,
+.message-list .un-read h2 .message-time,
+.message-list .un-read div {
+    color: #323232;
+}

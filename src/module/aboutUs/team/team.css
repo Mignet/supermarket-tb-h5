@@ -1,0 +1,72 @@
+.wrapper {
+    width: 888px;
+    overflow: hidden;
+    border-bottom: 1px solid #dcdcdc !important;
+}
+
+.swiper-container {
+    width: 808px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.person-photo {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.person-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.person-name {
+    padding-top: 16px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    color: #323232;
+}
+
+.person-grade {
+    padding-bottom: 20px;
+    color: #969696;
+}
+
+.person-intro {
+    padding: 0 24px;
+    line-height: 25px;
+    color: #969696;
+    text-align: left;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper .arrow {
+    width: 23px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper .arrow-left {
+    background-image: url('../../../image/org_arrow_left.png');
+    left: 12px;
+}
+
+.wrapper .arrow-right {
+    background-image: url('../../../image/org_arrow_right.png');
+    right: 12px;
+}

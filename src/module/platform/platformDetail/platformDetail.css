@@ -1,0 +1,456 @@
+/*common*/
+pre{
+  width:100%;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  color: #969696;
+  line-height: 30px;
+  white-space: pre-wrap;       
+  white-space: -moz-pre-wrap;  
+  white-space: -pre-wrap;      
+  white-space: -o-pre-wrap;    
+  word-wrap: break-word;       
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content .introduce {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #fff;
+}
+.content .introduce .introduce-l {
+  width:930px;
+  float: left;
+  border-right: solid 10px #EDF0F3;
+  overflow: hidden;
+  padding: 24px 0 0 30px;
+}
+.content .introduce .introduce-l .introduce-img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+.content .introduce .introduce-l .introduce-img img {
+  width: 100%;
+  height: 200px;
+}
+.introduce-img p {
+  padding-top: 15px;
+}
+.introduce-img span {
+  background: #edf0f3;
+  color: #969696;
+  padding: 0 10px;
+}
+.content .introduce .introduce-l .introduce-detail {
+  float: left;
+  width: 657px;
+  padding-left: 24px;
+}
+.content .introduce .introduce-l .introduce-detail h2 {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 5px;
+  color: #323232;
+  font-size: 22px;
+}
+.content .introduce .introduce-l .introduce-detail h2 i {
+  padding-right: 10px;
+  float: left;
+}
+.content .introduce .introduce-l .introduce-detail h2 span {
+  float: left;
+  font-size: 14px;
+  color: #969696;
+  padding: 4px 6px;
+  border-radius: 5px;
+  max-width: 300px;
+}
+.introduce-detail h2 i,
+.introduce-detail h2 span{
+  float: left;
+}
+.introduce-detail .orgTagList{
+  float: right;
+
+}
+.content .introduce .introduce-l .introduce-detail .orgTagList li{
+  float: left;
+  font-size: 14px;
+  color: #118fd8;
+  border: solid #118fd8 1px;
+  padding: 2px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.introduce-detail .main-detail {
+  padding: 20px 0;
+}
+
+.introduce-detail .main-detail li{
+  width: 25%;
+  float: left;
+}
+
+.introduce-detail .main-detail li p.title {
+  color: #969696;
+}
+
+.introduce-detail .main-detail li p.detail {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+#annualEarnings {
+  color: #f28a10;
+}
+.yearRate{
+  color: #f28a10;
+}
+.introduce-detail .sub-detail {
+  border-top: solid 1px #f3f4f4;
+  padding: 20px 0;
+}
+.introduce-detail .sub-detail li{
+  float: left;
+  width: 50%;
+  line-height: 200%;
+  color: #969696;
+}
+.introduce-detail .sub-detail li a{
+  float: left;
+  width: 22%;
+  color: #969696;
+}
+.introduce-detail .sub-detail li span {
+  float: left;
+  width: 78%;
+  color: #646464;
+}
+.content .introduce .introduce-r {
+  float: left;
+  width: 230px;
+  overflow: hidden;
+  text-align: center;
+}
+.introduce-r .act {
+  height: 90px;
+  border-bottom: solid 10px #EDF0F3;
+}
+.introduce-r .act img {
+  width: 231px;
+  height: 90px;
+}
+.introduce-r .safe{
+  padding: 10px 0;
+  margin: auto 0;
+}
+.introduce-r p {
+  color: #95a2bf;
+  font-size: 16px;
+}
+.nolist td{
+  background-position: 300px center;
+}
+.content .introduce .introduce-r p a.guarantee {
+  float: left;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #20a6f5;
+  font-size: 14px;
+  line-height: 15px;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.content .introduce .introduce-r > a {
+  cursor: pointer;
+  display: block;
+  margin-top: 40px;
+  width: 148px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fd5353;
+  color: #fff;
+  border-radius: 5px;
+  margin: 35px auto 0;
+}
+.content .introduce .introduce-r > a:hover{
+  background: #e64545;
+}
+.content .tab {
+  background: #fff;
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.content .tab .tab-head {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  padding-top: 0px;
+}
+.content .tab .tab-head li {
+  float: left;
+  padding: 0 16px;
+  padding-top: 20px;
+  height: 34px;
+  border-bottom: 1px solid #ccc;
+  border-top: 2px solid #fff;
+  border-left: 1px solid #fbfbfb;
+  border-right: 1px solid #fbfbfb;
+}
+.content .tab .tab-head li:first-child.tab-active {
+  border-left: none;
+}
+.content .tab .tab-head .tab-active {
+  border-top: 2px solid #12a2f5;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}
+.content .tab .tab-head li a {
+  display: block;
+  font-size: 20px;
+  height: 20px;
+  padding: 0 14px 14px;
+}
+.tab-active a {
+  color: #12a2f5;
+}
+/*tab内容 start*/
+.tab-box{
+  position: relative;
+}
+.tab-change{
+  background-color: #fff;
+}
+/*考察报告 start*/
+.platform-report .left{
+  float: left;
+  width: 570px;
+  height: 97px;
+  padding-left:30px;
+  margin: 24px 0;
+  border-right: 1px solid #dcdcdc;
+}
+.platform-report .left h2{
+  padding-top: 6px;
+  padding-bottom: 15px;
+}
+.platform-report .left p a{
+  display: block;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #137ff7;
+  text-decoration: underline;
+}
+.platform-report .left .download{
+  display: block;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #12a2f5;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.platform-report .right{
+  position: relative;
+  float: left;
+  padding-left: 24px;
+}
+.platform-report .right h2{
+  float: left;
+  padding-top: 30px;
+}
+.platform-report .right .org-level{
+  position: absolute;
+  left: 58%;
+  top: 45%;
+  z-index: 999;
+}
+.platform-report .right #myCanvas{
+  float: left;
+  width: 450px;
+  height: 150px;
+  overflow: hidden;
+}
+.company-intro,
+.webRecord,
+.contact-way{
+  padding: 30px 40px;
+}
+/* 公司介绍 start*/
+.company-intro p{
+  line-height: 30px;
+  font-size: 16px;
+  color: #969696;
+  background-color: #fff;
+}
+/* 公司介绍 end*/
+/*团队介绍 start*/
+.avatar{
+  width: 1120px;
+  padding: 30px 40px 0 40px;
+  position: relative;
+}
+.avatar .swiper-box{
+  width: 1120px;
+  height: 458px;
+  overflow: hidden;
+}
+.swiper-avatar{
+  width: 100%;
+  height: 458px;
+  position: relative;
+  overflow: hidden;
+}
+.avatar .arrow{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 99;
+  cursor: pointer;
+}
+.move-left{
+  left: 12px;
+}
+.move-right{
+  right: 12px;
+}
+.swiper-avatar .arrow img{
+  vertical-align: middle;
+  z-index: 999;
+}
+.avatar-list{
+  width: 1120px;
+  overflow: hidden;
+}
+.avatar .swiper-avatar .avatar-list{
+  margin: 0;
+}
+.avatar-list .avatar-item{
+  position: relative;
+  width: 280px;
+  text-align: center;
+  cursor: pointer;
+}
+.avatar-item .item-box{
+  border-right: 1px solid #dcdcdc;
+  min-height: 430px;
+}
+.avatar-list .avatar-name{
+  padding-top: 15px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #323232;
+}
+.avatar-list .avatar-position{
+  color: #969696;
+  padding-bottom: 25px;
+}
+.avatar-list .avatar-intro{
+  padding: 0 30px;
+  line-height: 24px;
+  color:#646464;
+  text-align: justify;
+}
+.avatar-item .avatar-detail-intro{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  line-height: 33px;
+  border-radius: 5px;
+  width: 500px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  border:1px solid #dcdcdc;
+}
+.describe-detail{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  background-color: #fff;
+  line-height: 33px;
+  border-radius: 5px;
+  color: #323232;
+  width: 470px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  border:1px solid #dcdcdc;
+}
+/*团队介绍 end*/
+
+/*公司照片 start*/
+.pic-tab{
+  padding-top: 30px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.pic-tab li{
+  float: left;
+  padding: 0 30px;
+}
+.pic-tab li a{
+  font-size: 18px;
+  color: #969696;
+  cursor: pointer;
+}
+.pic-tab li.active a{
+  color: #24a9f6;
+}
+.companyPic .pic-wrapper{
+}
+.companyPic img{
+  float: left;
+  width: 262px;
+  height: 147px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.pic-wrapper{
+  width: 100%;
+  overflow: hidden;
+}
+.pic-wrapper > div div{
+  padding-left: 30px;
+  height: 167px;
+  overflow: hidden;
+}
+.pic-wrapper .more{
+  width: 100%;
+  height: 24px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background: url('/image/up.png') no-repeat center center;
+}
+.pic-wrapper >div .down{
+  background: url('/image/down.png') no-repeat center center;
+}
+/*公司照片 end*/
+.heightAuto{
+  height: auto!important;
+}
+/*tab内容 end*/
+.content .onSaleText {
+  font-size: 22px;
+  color: #323232;
+  border-left: 5px solid #12a2f5;
+  margin: 20px 0;
+  padding-left: 12px;
+}
+.no-data-tpl{
+  margin-bottom: 30px;
+}

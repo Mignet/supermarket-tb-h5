@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>绑定银行卡-T呗（投呗）</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="./bindBankCard/bindBankCard.css"/>
+    <!--[if lt IE 9]>
+    <script src="./component/html5shiv/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body style="background-color: #fff;">
+    <form class="form" novalidate>
+        <ul>
+            <li>
+                <div class="row clearfix">
+                    <label for="userName">姓名：&nbsp;&nbsp;&nbsp;</label>
+                    <div class="inputWrapper">
+                        <input type="text" id="userName" name="userName" placeholder="请输入真实姓名" required="true"  pattern="^[\u4e00-\u9fa5]{2,}$" label="真实姓名" maxlength="10">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row clearfix">
+                    <label for="IdCard">身份证号码：&nbsp;&nbsp;&nbsp;</label>
+                    <div class="inputWrapper">
+                        <input type="text" name="idCard" placeholder="请输入身份证号码" id="IdCard" pattern="(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x))$" required="true" label="正确的身份证号码" maxlength="20">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row clearfix">
+                    <label for="bankNumber">银行卡号：&nbsp;&nbsp;&nbsp;</label>
+                    <div class="inputWrapper">
+                        <input type="text" name="bankCard" placeholder="请输入银行卡号" required="true" id="bankNumber" required="true" label="正确的银行卡号" pattern="^(\d{16}|\d{19})$" maxlength="19">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row clearfix">
+                    <label for="selectBank">开户银行：&nbsp;&nbsp;&nbsp;</label>
+                    <div class="inputWrapper">
+                        <select id="selectBank" name="bankName" label="开户银行" required="true" type='select'>
+                            <option value="" class="option-bank">请选择开户银行</option>
+                        </select>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row clearfix">
+                    <label for="mobile">银行预留手机号：&nbsp;&nbsp;&nbsp;</label>
+                    <div class="inputWrapper">
+                        <input type="text" name="mobile" placeholder="请输入预留手机号" required="true" id="mobile" required="true" label="银行预留手机号码" pattern="^1\d{10}$" maxlength="11">
+                    </div>
+                </div>
+            </li>
+            <li style="height: 14px;padding-left:40%;padding-top:12px;"><div class="errorWrapper"></div></li>
+            <li><a class="button">提交</a></li>
+        </ul>
+    </form>
+    <script type="text/javascript" src='/lib/main.js'></script>
+    <script src="/component/ie/jquery.placeholder.js"></script>
+	<script type="text/javascript">
+        seajs.use('./bindBankCard/bindBankCard')
+    </script>        
+</body>
+</html>

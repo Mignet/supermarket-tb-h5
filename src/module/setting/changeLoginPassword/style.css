@@ -1,0 +1,62 @@
+/*µ¯´°ÉèÖÃ*/
+.form {
+    width: 100%;
+    margin-top: 44px;
+}
+
+.form .row {
+    height: 30px;
+    padding-bottom: 12px;
+}
+.form .row > span {
+    float: left;
+    width: 40%;
+    line-height: 30px;
+    text-align: right;
+    color: #323232;
+}
+
+.form .row > label {
+    float: left;
+    width: 40%;
+    text-align: right;
+    color: #323232;
+    line-height: 30px;
+}
+
+.form .row input {
+    padding-left: 5%;
+    height: 100%;
+    width: 95%;
+}
+
+.inputWrapper{
+    float: left;
+    width: 44%;
+    height: 30px;
+    border:1px solid #dcdcdc;
+}
+
+.change-password {
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin-left: 40%;
+    background: #12a2f5;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 5px;
+}
+.errorBox {
+    margin-left: 40%;
+    margin-top: 12px;
+    color: #fb5757;
+    padding-left: 18px;
+    background: url('../../../image/error-logo.png') no-repeat left center;
+    background-size: auto 100%;
+}
+.input-onerror{
+    border-color: #12a2f5!important;
+}
+

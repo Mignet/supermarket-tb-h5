@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>提现-T呗（投呗）</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="./withdrawals/withdrawals.css">
+    <!--[if lt IE 9]>
+      <script src="./component/html5shiv/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body class="mine-body" style="background-color: #edf0f3;">
+<div class="container" style="background-color: #fff;">
+        <div class="header" id="header">
+            <div>
+                <div class="header-l clearfloat">
+                    <p><img class="index-tel" src="/image/index-tel.png" alt=""></p>
+                    <p class="tel">
+                        <span>欢迎致电： <span class="company-tel">400-888-6987</span></span>
+                    </p>
+                    <p class="server-time"><span>服务时间：<i>9:00-12:00&nbsp;&nbsp;&nbsp;&nbsp;13:30-18:00</i></span></p>
+                    <p>
+                        <a class="wechat">
+                            <img src="/image/two_code_1.png">
+                        </a>       
+                    </p>
+                </div>
+                
+                <ul class="header-r">
+                    <li style="display:none"><a href="#">合作机构登录</a></li>
+                    <li><a href="/module/aboutUs/companyIntroduce.html">关于我们</a></li>
+                    <li><a href="/module/aboutUs/helpCenter.html" class="helpCenter">帮助中心</a></li>
+                </ul>  
+            </div>
+        </div>
+        <!-- 导航 -->
+        <div class="nav" id="nav">
+            <div class="clearfloat">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/image/toobei_logo.png" alt="T呗logo">
+                        <span class="vertically"></span>
+                    </a>        
+                </div>
+                <div class="tab">
+                    <ul>
+                        <li>
+                            <a href="/">首页</a>
+                        </li>
+                        <li>
+                            <a href="/module/product/list.html">选产品</a>
+                        </li>
+                        <li>
+                            <a href="/module/platform/platform.html">选平台</a>
+                        </li>
+                        <li>
+                            <a href="/module/safe/safe.html">安全保障</a>
+                        </li>
+                    </ul>       
+                </div>
+
+                <div class="personer">
+                    <div id="personerDeatil" class="detail">
+                        <span>
+                            <img src="/image/my-tbei.png" alt="T呗">
+                            <a href="/module/toobei/toobei.html">我的T呗</a>
+                        </span>
+                        <span class="split-line">|</span>
+                        <a href="/module/messageCenter/messageCenter.html">
+                            <img src="/image/email.png">
+                            <span class="messagecount">3</span>
+                        </a>
+                    </div>
+                    <div id="loginButtonGroup" class="button-group">
+                        <a href="/module/user/register.html" class="register">注册送红包</a>
+                        <a href="/module/user/login.html" class="login">登录</a>
+                    </div>      
+                </div>
+            </div>
+        </div>
+
+    <div class="withdrawals-content-back">
+
+    <div class="withdrawals-content clearfloat">
+        <div class="toobei-nav">
+          <ul class="header">
+            <li>
+              <img id="touxiang" class='touxiang' src="/image/touxiang2.png"/>
+            </li>
+            <li id="mobile">　</li>
+            <li>
+              <span class="tips" id="usernameAuthentication">已认证</span><!--已认证 tips_renz_1-->
+              <span class="tips tips_moblie_1">已绑定</span><!--已认证 tips_moblie_1-->
+              <span class="tips" id="bindingCard">已认证</span><!--已认证 tips_bankcard_1-->
+            </li>
+          </ul>
+
+          <ul class="mytblist">
+            <li class="active"><a href="/module/investment/investment.html" class="mytip tipstz">我的投资</a></li>
+            <li><a href='/module/planner/planner.html' class="mytip tipslc">我的理财师</a></li>
+            <li><a class="mytip tipshb" href="/module/redPacket/redPacket.html">我的红包</a></li>
+            <li><a class="mytip tipsset" href="/module/account/account.html">账户设置</a></li>
+            <li><a class="mytip tipsms" href="/module/messageCenter/messageCenter.html">消息中心</a></li>
+            <li><a class="mytip tipsment" href="/module/platformManage/platformManage.html">平台管理</a></li>
+            <li><a class="mytip tipsout" id="logOut">退出登录</a></li>
+          </ul>
+        </div>
+
+        <div class="withdrawals-content-right">
+            <div class="withdrawals-title">
+                提现
+            </div>
+            <form class="withdrawals-main form" novalidate>
+              <ul>
+                  <li>
+                  <div class="row">
+                  <label>银行卡号：</label>
+                  <span id="bankNumber"></span>
+                  <!-- 解决google自动因input type="password" 而引起的表单自动填充，input背景为黄色问题-->
+                  <input type="password" style="position: absolute;top:-100000px;visibility: hidden;"/>
+                  <span class="bankName"></span>
+                  </div>
+                  </li>                  
+
+                  <li class="hidden">
+                  <div class="row">
+                  <label for="selectBank">开户银行：</label>
+                  <select id="selectBank" style="width:260px" name="bankName" label="开户银行" required="true" type='select' novalidate="true">
+                  <option value="">请选择开户行</option>
+                  </select>
+                  </div>
+                  </li>                 
+
+                  <li class="hidden">
+                  <div class="row">
+                  <label for="selectProvince">所属支行：</label>
+                  <select id="selectProvince" style="width:122px;margin-right: 10px"  label="省份" required="true" type='select' novalidate="true">
+                  <option value="">请选择省份</option>
+                  </select>
+
+                  <select id="selectCity" name="city" style="width:122px"  label="城市" required="true" type='select' novalidate="true">
+                  <option value="">请选择城市</option>
+                  </select>
+                  </div>
+                  </li>   
+
+                  <li  class="hidden">
+                  <div class="row">
+                  <label for="kaihuhang"></label>
+                  <input type="text" id="kaihuhang" name="kaihuhang" value="" placeholder="请输入支行名称" required="true" maxlength="100"
+                  label="请输入支行名称" novalidate="true">
+                  </div>
+                  </li> 
+
+                  <li>
+                  <div class="row">
+                    <label for="amount">提现金额：</label>
+                    <input type="text" id="amount" name="amount" value="" placeholder="请输入提现金额" required="true" label="提现金额" pattern="^(([1-9]\d*)(\.\d{1,2})?)$|(0\.0?([1-9]\d?))$" maxlength="9"><br>
+                  </div>
+
+                  <div>
+                    <label></label>
+                    <span>当前账号余额 <a id="accountBalance" style="color:#fd5353">0.00</a> 元</span>
+                  </div>
+                  </li>                  
+
+                  <li>
+                  <div class="row">
+                  <label>交易密码：</label>
+                  <input type="password" id="password" name="password" value="" placeholder="请输入T呗交易密码" required="true"  label="T呗交易密码" pattern="^\d{6}$" maxlength="6">
+                  <a href="/module/account/resetPayPassword.html" class="forget-password">忘记交易密码？</a>
+                  </div>
+                  </li>                  
+
+                  <li>
+                  <div class="row">
+                  <label>到账时间：</label>
+                  <span id="paymentDate"></span>
+                  </div>
+                  </li>
+
+                  <li>
+                  <div class="row">
+                  <label>提现费用：</label>
+                  <span id="withdrawFee"></span>
+                  </div>   
+                  </li>
+
+                  <li>
+                    <div class="errorBox pos" style="margin:0 0 0 120px">      
+
+                    </div>
+                  </li>
+
+                  <li>
+                  <div>
+                  <label></label>
+                  <span>
+                  <a class="button">提交</a>
+                  </span>
+                  </div>
+                  </li>
+              </ul>
+            </form>
+
+            <div class="withdrawals-main">
+                <span class="tip-title">温馨提示：</span><br/>
+                <span class="tip-content">为保障资金安全，每位用户仅可添加一张银行卡，资金进出将都通过该银行卡进行，绑定成功后不支持修改。如需更换，请联系客服<span class="company-tel">400-888-6987</span></span>                  
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!--   网页底部   -->
+<div class="site-footer">
+<div class="footer-adbar">   
+<div class="container">
+<ul class="clearfix">
+<li class="first-child">
+<img src="/image/footer_select_reason.png" alt="选择T呗的理由">
+</li>
+<li class="two-child">
+<img src="/image/footer_reason_01.png" alt="律盾保障计划">
+<h3>律盾保障计划</h3>
+<span>提供维权基金、平台风险保障金、顶尖的律师团队</span>
+</li>
+<li class="three-child">
+<img src="/image/footer_reason_02.png" alt="甄选优质平台">
+<h3>甄选优质平台</h3>
+<span>权威的实地认证考察、调研、资质审核</span>
+</li>
+<li class="four-child">
+<img src="/image/footer_reason_03.png" alt="专业的安全评级">
+<h3>专业的安全评级</h3>
+<span>综合平台线上、线下运营管理水平</span>
+</li>
+<li class="last-child">
+<img src="/image/footer_reason_04.png" alt="大数据实时监测">
+<h3>大数据实时监测</h3>
+<span>数据监测、动态、舆情等大数据反馈</span>           
+</li>
+</ul>
+</div>                     
+</div>
+
+<div class="footer-linkbar">
+<div class="container">                           
+<div class="linkbar-top">
+<div class="linkbar-nav">
+
+<div class="clearfix">
+<p><a href="/module/aboutUs/companyIntroduce.html">T呗介绍</a></p>
+<p><a href="/module/aboutUs/notice.html">T呗公告</a></p>
+<p class="none"><a href="/module/aboutUs/joint.html">商务合作</a></p>
+<p class="none"><a href="/module/aboutUs/dynamic.html">T呗动态</a></p>
+</div>                            
+
+<div class="clearfix">
+<p><a href="/module/aboutUs/team.html">团队介绍</a></p>
+<p><a href="/module/aboutUs/helpCenter.html">帮助中心</a></p>
+<p class="hidden"><a href="/module/aboutUs/report.html">媒体报道</a></p>
+</div>                            
+
+<div class="clearfix">
+<p><a href="/module/protocol/protocol.html">注册协议</a></p>
+<p><a href="/module/safe/safe.html">安全保障</a></p>
+<p class="hidden"><a href="">行业动态</a></p>
+</div>                            
+
+<div class="clearfix">
+<p><a href="/module/aboutUs/contact.html">联系我们</a></p>
+<p class="hidden"><a href="">投资攻略</a></p>
+</div>                                
+</div>
+
+<div class="linkbar-qrcode">
+<div><img src="/image/footer_qrcode_icon.png" alt="T呗二维码"></div>
+<div class="wechat">T呗官方公众号</div>
+</div> 
+
+<div class="linkbar-link">
+<img src="/image/footer_tel_icon.png" alt="T呗官方联系电话">
+</div>                                                        
+</div>                    
+</div>
+</div>  
+
+<div class="footer-bottombar">
+<div class="container">  
+<div class="companyhonest">
+<a href="http://www.bcpcn.com/product/rz/bq/BCP1894497542.html" target="_blank">
+<img src="/image/site_identity_red2.png" alt="T呗已通过中网权威数据库对比，获得“诚信企业”身份验证">
+</a>   
+<a href="https://ss.knet.cn/verifyseal.dll?sn=e16091944030064723ip1l000000&amp;ct=df&amp;a=1&amp;pa=0.47373637918780176" target="_blank">
+<img src="/image/site_identity_red.png" alt="T呗已通过中网权威数据库对比，获得“可信网站”身份验证">
+</a>
+</div>
+
+<div class="companyrecord">
+<span>Copyright©2016 &nbsp;&nbsp; 深圳市前海领会科技有限公司</span>
+<a href="http://www.miitbeian.gov.cn" target="_blank">&nbsp; 粤ICP备16032193号-2</a>
+</div>
+
+</div>
+</div>                         
+</div>  
+<script type="text/javascript" src='/lib/main.js'></script>
+<script src="/component/ie/jquery.placeholder.js"></script>  
+<script src='https://kefu.easemob.com/webim/easemob.js' async='async'></script>
+<script type="text/javascript">
+seajs.use("./withdrawals/withdrawals");
+</script>
+</body>
+</html>

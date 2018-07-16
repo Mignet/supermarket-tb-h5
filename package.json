@@ -1,0 +1,53 @@
+{
+  "name": "toobei-market",
+  "version": "1.0.0",
+  "description": "it is toobei supermarket",
+  "main": "index.html",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "chart.js": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-asset-rev": "0.0.15",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-htmlone": "^0.1.9",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-replace": "^0.5.4",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.0.5",
+    "gulp-rev-urlhash": "^1.0.3",
+    "gulp-seajs-combo": "^1.2.3",
+    "gulp-seajs-concat": "^1.0.5",
+    "gulp-seajs-transport": "^0.4.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "html5shiv": "^3.7.3",
+    "jquery": "^3.1.0",
+    "jquery-placeholder": "^2.3.1",
+    "jshint": "^2.9.3",
+    "layer": "^0.1.0",
+    "run-sequence": "^1.2.2"
+  },
+  "scripts": {
+    "dev": "set NODE_ENV=pre && gulp dev",
+    "pre": "set NODE_ENV=pre && gulp build",
+    "pro": "set NODE_ENV=produce && gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@10.16.0.209:frontH5/toobei-market.git"
+  },
+  "keywords": [
+    "gulp",
+    "jquery",
+    "seajs",
+    "underscore"
+  ],
+  "author": "ypl",
+  "license": "MIT",
+  "README": "README.md"
+}

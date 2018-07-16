@@ -1,0 +1,22 @@
+body,html{
+	background: #fedd46;
+}
+.box-wrapper{
+	width:100%;
+	position: relative;
+	margin: 0 auto;
+}
+.box-wrapper img{
+	width: 100%;
+	display: block;
+}
+.box-wrapper a{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+	display: block;
+	margin: 0 auto;
+	width: 379px;
+	height: 115px;
+}

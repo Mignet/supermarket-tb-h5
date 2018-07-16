@@ -1,0 +1,154 @@
+/*.mytbmain{
+	background-color: #edf0f3;
+	padding-top:20px;
+}
+.mytbcontent{
+	width:1002px;
+	margin:0 auto; 
+}*/
+
+.rightcontent{
+	float:left;
+	width:928px;
+	height:965px;
+	color:#323232;	
+	background-color: #fff;
+}
+
+.moneyCountbox{
+	padding:20px;
+}
+
+.moneyCount li{
+	float: left;
+	width:50%;
+	font-size: 16px;
+	color:#969696;
+}
+.moneyCount li strong{
+	display: block;
+	font-size: 42px;
+	line-height: 70px;
+	font-weight: normal;
+}
+.headertop>.bindingCardTips,.headertop>.goAuthentication{
+  top: 215px!important;
+}
+
+.moneyCount li .red{
+	color:#fd5353
+}
+
+.moneyCount li small{
+	vertical-align: bottom;
+	padding-left:10px;
+	font-size: 14px;
+}
+
+.mytb_abtn{
+	display: inline-block;
+	width:100px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	color:#fff;
+	text-decoration: none;
+	font-size: 14px;
+	background-color: #fd5353;
+	border-radius: 6px;
+}
+
+
+.mytb_abtn:hover{
+	text-decoration: none;
+}
+.recorda{
+	color:#12a2f5;
+	display: inline-block;
+	padding-top:28px;
+}
+.moneyrecode{
+	background-color: #fff;
+	font-size: 18px;
+	padding-bottom:20px;
+	width:100%;
+}
+
+.tab span{
+	display: inline-block;
+	cursor:pointer;
+	line-height: 48px;
+	border-bottom:3px solid #fff;
+	padding:0 30px;
+}
+
+.tab .current{border-bottom-color: #fd5353;color:#fd5353;}
+
+.tab{padding-left:20px;padding-right:20px;}
+
+.moneyTab1{width:100%;font-size: 14px;}
+
+.moneyTab1 tr{
+	border-bottom:1px solid #dcdcdc;
+}
+.moneyTab1 th{
+	background-color: #e6e9f2;
+	color:#646464;
+	font-weight:normal;
+	line-height: 40px;
+	text-align: left;
+	padding-left:10px;
+}
+
+.moneyTab1 td{
+	line-height: 48px;
+	padding-left:10px;
+}
+
+.moneyTab1 .nolist {
+	border-bottom:0;
+}
+
+.moneyTab1 .nolist td{
+	height:470px;
+	background: url(/image/nolist.png) 150px center no-repeat;
+	text-align: center;
+	color: #c8c8c8;
+	font-size: 48px;
+}
+
+.investment-tile{
+	height: 50px;
+	line-height: 50px;
+	background-color: #95a2bf;
+	color:#fff;
+}
+
+.investment-tile .left{
+    float:left;
+    font-size: 18px;
+	padding-left:15px;
+}
+
+.investment-tile .right{
+    float:right;
+    font-size: 12px;
+    padding-right:15px;
+}
+
+.ellipsis{
+	overflow: hidden;
+    max-width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/**.logout-bg{position: fixed;width:100%;height: 100%;background-color: rgba(0,0,0,0.6);z-index: 10;top: 0;left: 0;*background-color: #566061;display: none;}
+.logout-block {width: 740px;height: 400px;margin-top: 200px;margin-left: 30%;background-color: white;}
+.header-block {width: 100%;height: 60px;background-color: #95a2bf;}
+.header-block span {line-height: 62px;margin-left: 20px;font-size: 16px;color: white;}
+.header-block button.cancel-logout {float: right;width: 50px;height: 50px;margin-top: 5px;color: white;font-size: 20px;background: none;border: none;outline: none;cursor: pointer}
+.body-block p {margin-top: 120px;text-align: center;font-size: 24px;color: #646464;}
+.body-block button.cancel-logout {width: 190px;height: 60px;color: #969696;background: none;outline: none;border: 1px solid #c8c8c8;border-radius: 5px;margin-left: 158px;margin-top: 64px;cursor: pointer;background-color: #c8c8c8;font-size: 18px;color: white;}
+.body-block button.confirm-logout {width: 190px;height: 60px;outline: none;background: none;border: 1px solid #fd5353;border-radius: 5px;margin-left: 20px;cursor: pointer;background-color: #fd5353;font-size: 18px;color: white;}*/

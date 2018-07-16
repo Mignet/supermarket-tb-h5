@@ -1,0 +1,224 @@
+.container-wrapper{
+	background-color: #ffffff;
+}
+
+.toobei-description{
+	text-align: center;
+}
+
+.description-logo{
+  text-align: center;
+  padding:50px 0;
+}
+
+.description-logo img{
+  width:743px;
+}
+
+.description-content{
+	padding:1px;
+}
+
+.description-content p{
+	color:#98a7c0;
+	font-size: 16px;	
+	line-height:2em;
+}
+
+.description-process {
+    padding:50px 0;
+}
+
+.description-process img{
+	width:1200px;
+}
+
+.toobei-choice{
+	background-color: #f5f5f5;
+}
+
+.choice-logo {
+  text-align: center;
+  padding:100px 0;	
+}
+
+.choice-logo img{
+  width:809px;
+}
+
+.choice-reason div{
+  float: left;
+  width:25%;
+  text-align: center;
+}
+
+.choice-reason div.first{
+  text-align: left;
+}
+
+.choice-reason div.last{
+  text-align: right;
+}
+
+.choice-reason img{
+	width:240px;
+}
+
+.choice-reason h2{
+	margin-top:20px;
+	margin-bottom: 10px;
+	color:#95a2bf;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.choice-reason p{
+    line-height: 1.5em;
+    color:#95a2bf;
+}
+
+.choice-reason div.first h2{
+   margin-left:40px;
+}
+
+.choice-reason div.first p{
+   margin-left:50px;
+}
+
+.choice-reason div.first p.first{
+   margin-left:55px;
+}
+
+
+.choice-reason div.last h2{
+   margin-right:50px;
+}
+
+.choice-reason div.last p{
+   margin-right:50px;
+}
+
+.choice-reason div.last p.last{
+   margin-right:70px;
+}
+
+.choice-reason2{
+  padding:80px 0;
+}
+
+.choice-reason2 div{
+  float: left;
+  width:33.33%;
+  text-align: center;	
+}
+
+.choice-reason2 div.first{
+  text-align: right;
+}
+
+.choice-reason2 div.last{
+  text-align: left;
+}
+
+.choice-reason2 img{
+	width:240px;
+}
+
+.choice-reason2 h2{
+	margin-top:20px;
+	margin-bottom: 10px;
+	color:#95a2bf;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.choice-reason2 p{
+    line-height: 1.5em;
+    color:#95a2bf;
+}
+
+.choice-reason2 div.first h2{
+  margin-right:50px;
+}
+
+.choice-reason2 div.first p{
+  margin-right:50px;
+}
+
+.choice-reason2 div.first p.last{
+  margin-right:60px;
+}
+
+.choice-reason2 div.last h2{
+  margin-left:50px;
+}
+
+.choice-reason2 div.last p{
+  margin-left:50px;
+}
+
+.choice-reason2 div.last p.first{
+  margin-left:35px;
+}
+
+.choice-reason2 div.last p.last{
+  margin-left:75px;
+}
+
+.toobei-investment{
+	background-color: #ffffff;
+	text-align: center;	
+}
+
+.investment-logo{
+  text-align: center;
+  padding:100px 0;	
+}
+
+.investment-process {
+   padding-top:20px;
+   padding-bottom:50px;
+}
+
+.investment-process div.step{
+	float: left;
+	width:20%;
+}
+
+.investment-process div.duration{
+	float: left;
+	width:6.55%;
+	margin-top:70px;
+}
+
+.investment-process div.step img{
+   width:200px;
+   margin-bottom: 25px;
+}
+
+.investment-process div.step p{
+   font-size: 16px;
+   color:#98a7c0;
+   line-height: 1.5em;
+   padding-left:20px;
+}
+
+.investment-process div.duration img{
+   width:19px;
+}
+
+.investment-button{
+	padding:100px;
+}
+.investment-button a{
+	display: inline-block;
+	width:301px;
+	cursor: pointer;
+}
+
+.investment-button img{
+    width:100%;
+}
+
+
+

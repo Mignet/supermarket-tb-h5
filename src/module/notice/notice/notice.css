@@ -1,0 +1,101 @@
+.site-main .left-nav {
+  float: left;
+  width: 300px;
+  margin-right: 10px;
+}
+.left-nav ul{
+  border:1px solid #dcdcdc;
+  border-bottom: 0;
+}
+.left-nav li{
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.left-nav li.title{
+  background-color: #fff;
+  padding-left: 3.69%;
+}
+.left-nav li{
+  font-size: 18px;
+  color: #323232;
+}
+.left-nav li a{
+  display: block;
+  padding-left: 44px;
+  font-size: 16px;
+  color: #646464;
+  background-repeat: no-repeat;
+  background-position: 11px center;
+  background-color: #fff;
+}
+.left-nav li a.active{
+  color: #fff;
+  background-color: #24a9f6;
+}
+.company-intro a{
+  background-image:  url("/image/about_companyIntro.png");
+}
+.report a{
+  background-image:  url("/image/about_report.png");
+}
+.team-intro a{
+  background-image: url("/image/about_teamIntro.png")
+}
+.help a{
+  background-image: url("/image/about_help.png")
+}
+.joint a{
+  background-image: url("/image/about_joint.png")
+}
+.agreement a{
+  background-image: url("/image/about_agreement.png")
+}
+.notice a.active{
+  background-image: url("/image/about_notice_active.png")
+}
+.dynamic a{
+  background-image: url("/image/about_dynamic.png")
+}
+.contact a{
+  background-image: url("/image/about_contact.png")
+}
+.site-main .right-content {
+  float: left;
+  width: 888px;
+  background-color: #fff;
+  border:1px solid #dcdcdc;
+  border-bottom: 0;
+}
+.notice-detail{
+  margin: 0 90px;
+  padding: 36px 0;
+  border-bottom: 1px dashed #dcdcdc;
+}
+.notice-detail h1{
+  font-size: 28px;
+  color: #646464;
+  text-align: center;
+}
+.notice-detail p.releaseTime{
+  color: #969696;
+  padding-top: 20px;
+  padding-bottom: 53px;
+  text-align: center;
+}
+.pager-nav{
+  padding: 30px 90px 235px 90px;
+}
+.pager-nav p{
+  color: #c8c8c8;
+}
+.pager-nav .before{
+  float: left;
+}
+.pager-nav .next{
+  float: right;
+}
+.pager-nav p a{
+  color: #646464;
+  cursor: pointer;
+}

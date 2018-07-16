@@ -1,0 +1,75 @@
+.site-content {
+    margin: 10px 0;
+    min-height: 867px;
+}
+.nav-right {
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    background: #fff;
+}
+.content-head {
+    height: 60px;
+    line-height: 60px;
+    color: #323232;
+    margin: 0 20px;
+    padding-left: 5px;
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+}
+.account-setting{
+    padding: 0 30px;
+}
+.account-setting li{
+    border-bottom: 1px dashed #e1e1e1;
+}
+.setting-list {
+    height: 60px;
+    line-height: 60px;
+    font-size: 0;
+}
+.setting-list a{
+    cursor: pointer;
+}
+.list-item {
+    font-size: 14px;
+    float: left;
+}
+.list-ico {
+    width: 5%;
+    height: 60px;
+    background: url("../../../image/setting-no.png") no-repeat center center;
+}
+.list-ico-yes {
+    background: url("../../../image/setting-yes.png") no-repeat center center;
+}
+.list-name {
+    width: 30%;
+    color: #646464;
+}
+.list-status{
+    width: 20%;
+    color: #f49b47;
+}
+.list-status1{
+    width: 20%;
+    color: #f49b47;
+}
+.list-status2 {
+    width: 20%;
+    color: #adaca8;
+}
+
+.list-opt{
+    width: 45%;
+    text-align: right;
+}
+.list-opt a {
+    color: #24a9f6;
+}
+.setting-phone .list-opt{
+    color: #adaca8;
+}
+.setting-phone .list-status {
+    color: #adaca8;
+}
+

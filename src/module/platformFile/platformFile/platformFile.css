@@ -1,0 +1,249 @@
+.site-search{
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.site-filter{
+  padding:0 12px;
+}
+.site-filter .filter-list-box{
+  height: 46px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.site-filter>div.last{
+  border:0;
+}
+.site-filter ul.filter-list{
+  height: 100%;
+  float: left;
+  max-width: 930px;
+}
+.filter-list li{
+  float: left;
+}
+.filter-title{
+  float: left;
+  width: 73px;
+  line-height: 22px;
+  margin: 12px 0;
+  color: #646464;
+}
+
+.filter-all{
+  float: left;
+  width: 120px;
+  line-height: 22px;
+  margin: 12px 0;
+  color: #646464;
+  text-align:center;
+}
+
+.filter-all a{
+  line-height: 22px;
+  padding:0 7px;
+  margin: 12px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  max-width: 87%;
+  cursor: pointer;
+}
+
+.filter-all a:hover{
+  background: #c8c8c8;
+  color: #fff;
+}
+
+.filter-all a.active{
+  background-color:#24a9f6; 
+  color: #fff;
+}
+
+.filter-list li{
+  width: 120px;
+}
+.filter-list li.filter-first{
+  width: 73px;
+}
+.filter-list li a{
+  float: left;
+  line-height: 22px;
+  padding:0 7px;
+  margin: 12px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  max-width: 87%;
+  cursor: pointer;
+}
+.filter-list li a:hover{
+  background: #c8c8c8;
+  color: #fff;
+}
+.filter-list li a.active{
+  background-color:#24a9f6; 
+  color: #fff;
+}
+.site-search .search{
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 256px;
+  height: 24px;
+  background:url('./platform_file_search.png') no-repeat center;
+  background-size: 100% auto;
+}
+.search input{
+  height: 22px;
+  *height: 18px;
+  width: 200px;
+  margin-left: 14px;
+  margin-top: 1px;
+  color: #323232;
+}
+.search .search-button{
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 37px;
+  height: 22px;
+  z-index: 99;
+  cursor: pointer;
+}
+.reminder{
+  height: 50px;
+  line-height: 50px;
+  color: #646464;
+  font-size: 14px;
+}
+.plarform-list{
+  background-color: #fff;
+  height: 218px;
+  padding-top: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.plarform-list > div{
+  float: left;
+}
+.plarform-list .left{
+  padding-left: 30px;
+}
+.plarform-list .left img{
+  width: 214px;
+  height: 120px;
+}
+.plarform-list .center{
+  width: 663px;
+  padding-left: 16px;
+}
+.plarform-list .center h2{
+  font-size: 24px;
+  color: #646464;
+}
+.plarform-list .center .bright-point{
+  padding-left: 5px;
+  font-size: 14px;
+  color: #969696;
+}
+.plarform-list .center .list-detail-1{
+  position: relative;
+  height: 96px;
+  width: 100%;
+  border-bottom: 1px solid #f3f4f4;
+}
+.list-detail-1 >div{
+  position: absolute;
+  top: 24px;
+  width: 100%;
+}
+.list-detail-1 .caption{
+  padding-bottom: 16px;
+  font-size: 14px;
+  color: #969696;
+}
+.list-detail-1 .year-rate{
+  left: 0;
+}
+.year-rate .instruction{
+  font-size: 20px;
+  color: #f28a10;
+  font-weight: bold;
+}
+.list-detail-1 .product-limit{
+  left: 200px;
+}
+.list-detail-1 .register-capital{
+  left: 412px;
+}
+.list-detail-1 .org-background{
+  left: 610px;
+}
+.instruction{
+  font-size: 20px;
+  font-weight: bold;
+  color: #646464;
+}
+.instruction span{
+  font-weight: normal;
+}
+.list-detail-2{
+  position: relative;
+  padding-top: 8px;
+  width: 663px;
+  height: 90px;
+}
+.list-detail-2 li{
+  position: absolute;
+  padding-top: 16px;
+  width: 100%;
+  font-size: 14px;
+  color: #969696;
+}
+.list-detail-2 li span{
+  color: #646464;
+}
+.list-detail-2 .trusteeship{
+  left: 0;
+  top: 8px;
+}
+.list-detail-2 .guarantee{
+  left: 264px;
+  top: 8px;
+}
+.list-detail-2 .model{
+  left: 516px;
+  top: 8px;
+}
+.list-detail-2 .transfer{
+  left: 0;
+  top: 38px;
+}
+.list-detail-2 .city{
+  left: 264px;
+  top: 38px;
+}
+.list-detail-2 .online-time{
+  left: 516px;
+  top: 38px;
+}
+.plarform-list .right{
+  position: relative;
+  float: right;
+  padding-right: 21px;
+  padding-top: 75px;
+  z-index: 9999;
+}
+.plarform-list .right a{
+  display: block;
+  width: 160px;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  background-color: #12a2f5;
+  border-radius: 4px;
+}
+
+.content-pagination{
+  margin-top: 30px;
+}

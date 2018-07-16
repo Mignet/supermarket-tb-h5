@@ -1,0 +1,56 @@
+.form {
+    width: 100%;
+    margin-top: 44px;
+}
+
+.form .row {
+    height: 32px;
+    line-height: 32px;
+    padding-bottom: 15px;
+}
+
+.layui-layer {
+    border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.form .row > span {
+    float: left;
+    width: 40%;
+    text-align: right;
+    color: #323232;
+}
+
+.form .row > label {
+    float: left;
+    width: 40%;
+    text-align: right;
+    color: #323232;
+}
+
+.form .row input {
+    float: left;
+    width: 44%;
+    padding-left: 5%;
+    width: 95%;
+    height: 100%;
+}
+
+.inputWrapper{
+    float: left;
+    width: 38%;
+    height: 30px;
+    border:1px solid #dcdcdc;
+}
+
+.change-password {
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin-left: 40%;
+    background: #12a2f5;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
